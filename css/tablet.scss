@@ -1,0 +1,177 @@
+@media screen and (min-width: 768px) {
+
+	header {
+		padding: 16px 0 10px; 
+		.logo {
+			font-size: 36px;
+			padding-bottom: 0; 
+			
+			a {
+				padding-left: 12px;
+			}
+		}
+
+		.navbar-nav {
+			padding-top: 2px;
+			text-transform: uppercase;
+			font-weight: 500; 
+			margin: 0;
+		    width: 100%;
+		    padding-right: 26px;
+			
+			li {
+				float: left;
+			    padding: 0;
+			    word-spacing: 4px;
+			}
+		}
+
+		nav .nav li {
+		    clear: none;
+		}
+	}
+
+	#home {
+		padding: 208px 0 162px; 
+		 p {
+		 	font-size: 25px;
+    		font-weight: 500;
+		 } 
+	}
+
+	#about {
+		header {
+			font-size: 20px;
+			padding: 34px 0; 
+			a {
+				font-size: 22px; 
+			}  
+		}
+
+		.content {
+			border-bottom: none; 
+			h1 {
+				font-size: 30px;
+    			margin: 26px 0 36px;
+			}
+
+			p {
+				max-width: 520px;
+				font-size: 16px;
+				margin: 0 auto;
+				line-height: 1.5; 
+			}
+		}
+	}
+
+
+	#services {
+		padding-top: 6px;
+		border-bottom: none;
+		
+		.item-service {
+		    margin-bottom: 57px;
+		} 
+
+		h2 {
+		    font-size: 18px;
+		    font-weight: 400;
+		}
+
+		p {
+		    font-size: 11px;
+		    line-height: 1.8;
+		    margin: 0 auto;
+		    text-align: left;
+		    max-width: 218px;
+		}
+	}
+
+	#portfolio {
+		padding: 0;
+		
+		h1 {
+		    font-size: 30px;
+		    margin: 10px 0px;
+		    padding-bottom: 5px;
+		    
+		    &+p {
+				font-size: 14px; 
+				line-height: 1.8;
+				margin: 5px auto 37px;
+				max-width: 610px; 
+			}
+		}
+
+		.list-portfolio {
+			padding: 0 70px;
+		}
+
+		.post-portfolio {
+			margin-bottom: 49px;
+			a {
+			    font-size: 16px; 
+			    margin: 10px 0 0;
+			}
+
+			span {
+				font-size: 1.1rem;
+				padding: 8px;
+    			display: block; 
+    		}
+		}	
+	}
+
+	.talk {
+    	margin-top: 55px;
+    	padding-bottom: 45px; 
+    	
+    	p {
+		    font-size: 16px;
+		    line-height: 1.6;
+		    padding: 19px 65px;
+		}
+    }
+
+    .contact {
+    	padding: 57px 0 104px; 
+    	
+    	h2 {
+    		font-size: 30px;
+    		 
+    		&+p {
+    			font-size: 15px;
+			    line-height: 1.7;
+			    padding: 20px 60px 27px;
+			    word-spacing: 3px;
+    		}
+    	}
+
+    	h3 {
+    		margin-top: 80px;
+    		font-size: 30px;  
+    	}
+
+    	.details {
+    		padding-top: 35px; 
+    		max-width: 100%;
+    		overflow: hidden;
+    		
+    		li {
+    			font-size: 18px;
+    			display: inline-block; 
+    			text-align: center; 
+    			padding-bottom: 34px; 
+    		}
+    	}
+
+    	input, textarea {
+    		margin-bottom: 7px;
+    	}
+    }
+
+    footer {
+    	padding: 15px 0 20px;
+    	font-size: 15px;
+    }
+}

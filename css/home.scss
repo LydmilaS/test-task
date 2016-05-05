@@ -1,0 +1,144 @@
+@media screen and (min-width: 992px) {
+	header {
+
+		.logo {
+		    font-size: 22px;
+		    text-align: left;
+		    padding: 9px 22px;
+		}
+
+		.navbar-nav {	
+			padding-top: 0; 
+			li {
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	#about {
+		.content {
+			h1 {
+				font-size: 26px;
+    			margin: 30px 0 35px;
+			}
+
+			p {
+				max-width: 91%;
+			}
+		}
+	}
+
+
+	#services {
+		padding-top: 16px;
+		
+		.item-service {
+		    margin-bottom: 46px;
+		} 
+	}
+
+	#portfolio {
+		h1 {
+		    font-size: 26px;
+		    margin: 0;
+		    padding-bottom: 2px;
+		    
+		    &+p {
+				font-size: 16px; 
+				line-height: 1.6;
+				margin: 20px auto 26px;
+				max-width: 750px; 
+			}
+		}
+
+		.list-portfolio {
+			padding: 0;
+			text-align: right;
+		}
+
+		.post-portfolio {
+			a {
+			    margin: 8px 18px 0 0;
+			}
+
+			span {
+				padding: 9px 19px;
+    			display: block; 
+    		}
+		}	
+	}
+
+	.talk {
+		padding-bottom: 110px;   	
+    	p {
+		   padding: 13px 123px;
+		}
+    }
+
+    .contact {
+    	padding: 85px 0 206px; 
+    	
+    	h2 {
+    		font-size: 27px;
+    		padding-bottom: 3px; 
+    		 
+    		&+p {
+    			font-size: 14px;
+			    line-height: 1.8;
+			    padding: 9px 30px 53px;
+    		}
+    	}
+
+    	h3 {
+    		margin-top: 0;
+    		font-size: 20px;
+    		
+    		&:after {
+    			content: none;
+    		} 
+    	}
+		
+		.map,
+		.contact-info {
+			text-align: left;
+		}
+		
+    	.details {
+    		padding: 0 0 0 42px; 
+    		max-width: 345px;
+    		margin: inherit;     		
+    		li {
+    			text-align: left; 
+    			padding: 6px 0 2px;
+    			line-height: 1.5; 
+    			
+    			&:last-child {
+				    padding-bottom: 12px;
+				} 
+    		}
+
+    		.fa:before {
+				padding-right: 20px;
+			}
+    	}
+
+    	form {
+    		padding-left: 42px;
+    		
+    		input[type="submit"] {
+			    width: 125px;
+			    padding: 9px 0;
+			    margin: 0px auto;
+			}
+    	}
+    	input, textarea {
+    		margin-bottom: 7px;
+    	}
+    }
+
+    footer {
+	    word-spacing: 3px;
+	    padding: 18px 0;
+	    font-size: 14px;
+	}
+}
