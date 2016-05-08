@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
 
 	header {
-		padding: 16px 0 10px; 
+		padding: 16px; 
 		.logo {
 			font-size: 36px;
 			padding-bottom: 0; 
@@ -12,7 +12,7 @@
 		}
 
 		.navbar-nav {
-			padding-top: 2px;
+			padding-top: 7px;
 			text-transform: uppercase;
 			font-weight: 500; 
 			margin: 0;
@@ -32,10 +32,16 @@
 	}
 
 	#home {
-		padding: 208px 0 162px; 
+		padding: 208px 0 149px; 
 		 p {
 		 	font-size: 25px;
     		font-weight: 500;
+    		padding: 7px 64px; 
+    		margin-bottom: 18px; 
+    		
+    		&:last-child {
+    			padding: 7px 52px; 
+    		}
 		 } 
 	}
 
@@ -52,21 +58,22 @@
 			border-bottom: none; 
 			h1 {
 				font-size: 30px;
-    			margin: 26px 0 36px;
+    			margin: 24px 0 35px;
 			}
 
 			p {
-				max-width: 520px;
+				max-width: 600px;
+				word-spacing: 2px; 
 				font-size: 16px;
 				margin: 0 auto;
-				line-height: 1.5; 
+				line-height: 25px; 
 			}
 		}
 	}
 
 
 	#services {
-		padding-top: 6px;
+		padding: 14px 15px 3px;; 
 		border-bottom: none;
 		
 		.item-service {
@@ -76,14 +83,15 @@
 		h2 {
 		    font-size: 18px;
 		    font-weight: 400;
+		    margin: 13px 0 17px; 
 		}
 
 		p {
 		    font-size: 11px;
-		    line-height: 1.8;
+		    line-height: 18px;
 		    margin: 0 auto;
 		    text-align: left;
-		    max-width: 218px;
+		    max-width: 290px;
 		}
 	}
 
@@ -96,40 +104,40 @@
 		    padding-bottom: 5px;
 		    
 		    &+p {
-				font-size: 14px; 
-				line-height: 1.8;
-				margin: 5px auto 37px;
-				max-width: 610px; 
+				font-size: 16px;
+			    line-height: 25px;
+			    margin: 2px auto 40px;
+			    word-spacing: 1px;
 			}
 		}
 
 		.list-portfolio {
-			padding: 0 70px;
+			padding: 0 35px;
 		}
 
 		.post-portfolio {
 			margin-bottom: 49px;
 			a {
-			    font-size: 16px; 
-			    margin: 10px 0 0;
+			    font-size: 14px; 
+			    margin: 9px 0 0;
 			}
 
 			span {
 				font-size: 1.1rem;
-				padding: 8px;
+				padding: 9px;
     			display: block; 
     		}
 		}	
 	}
 
 	.talk {
-    	margin-top: 55px;
-    	padding-bottom: 45px; 
+    	margin-top: 52px;
+    	padding-bottom: 40px; 
     	
     	p {
-		    font-size: 16px;
-		    line-height: 1.6;
-		    padding: 19px 65px;
+		    font-size: 15px;
+		    line-height: 25px;
+		    padding: 24px 100px;
 		}
     }
 
@@ -167,6 +175,10 @@
 
     	input, textarea {
     		margin-bottom: 7px;
+    	}
+
+    	input[type="submit"] {
+    		margin: 14px auto;
     	}
     }
 
