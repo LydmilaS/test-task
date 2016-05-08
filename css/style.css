@@ -174,13 +174,13 @@ header nav {
 
 .contact {
   padding: 38px 0 129px; }
-  .contact h2 {
+  .contact h1 {
     position: relative;
     font-weight: 400;
     font-size: 44px;
     display: inline-block;
     padding-bottom: 6px; }
-    .contact h2:after {
+    .contact h1:after {
       content: '';
       width: 100%;
       height: 2px;
@@ -188,7 +188,7 @@ header nav {
       background-color: #f36b47;
       bottom: 0;
       left: 0; }
-    .contact h2 + p {
+    .contact h1 + p {
       color: #b1b0b0;
       font-size: 22px;
       word-spacing: 2px;
@@ -359,9 +359,9 @@ footer {
 
   .contact {
     padding: 57px 0 104px; }
-    .contact h2 {
+    .contact h1 {
       font-size: 30px; }
-      .contact h2 + p {
+      .contact h1 + p {
         font-size: 15px;
         line-height: 1.7;
         padding: 20px 60px 27px;
@@ -387,55 +387,60 @@ footer {
     padding: 15px 0 20px;
     font-size: 15px; } }
 @media screen and (min-width: 992px) {
-  header .logo {
-    font-size: 22px;
-    text-align: left;
-    padding: 9px 22px; }
-  header .navbar-nav {
-    padding-top: 0; }
+  header {
+    padding: 17px; }
+    header .logo {
+      font-size: 22px;
+      text-align: left;
+      padding: 11px 22px; }
     header .navbar-nav li {
       letter-spacing: 1px; }
 
   #about .content h1 {
-    font-size: 26px;
-    margin: 30px 0 35px; }
+    font-size: 25px;
+    margin: 27px 0 33px;
+    padding-bottom: 2px; }
   #about .content p {
-    max-width: 91%; }
+    max-width: 93%; }
 
   #services {
-    padding-top: 16px; }
+    padding-top: 23px; }
     #services .item-service {
       margin-bottom: 46px; }
 
   #portfolio h1 {
-    font-size: 26px;
+    font-size: 25px;
     margin: 0;
     padding-bottom: 2px; }
     #portfolio h1 + p {
       font-size: 16px;
       line-height: 1.6;
       margin: 20px auto 26px;
-      max-width: 750px; }
+      max-width: 72%; }
   #portfolio .list-portfolio {
     padding: 0;
-    text-align: right; }
+    text-align: right;
+    margin: 0 -15px; }
   #portfolio .post-portfolio a {
-    margin: 8px 18px 0 0; }
+    margin: 8px 18px 0; }
   #portfolio .post-portfolio span {
     padding: 9px 19px;
     display: block; }
 
   .talk {
-    padding-bottom: 110px; }
+    margin-top: 57px;
+    padding-bottom: 108px; }
     .talk p {
-      padding: 13px 123px; }
+      padding: 13px 0;
+      max-width: 74%;
+      margin: 0 auto; }
 
   .contact {
     padding: 85px 0 206px; }
-    .contact h2 {
-      font-size: 27px;
+    .contact h1 {
+      font-size: 25px;
       padding-bottom: 3px; }
-      .contact h2 + p {
+      .contact h1 + p {
         font-size: 14px;
         line-height: 1.8;
         padding: 9px 30px 53px; }
