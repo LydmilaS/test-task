@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 
 $primary-color: #f36b47;
+$text-color: #b1b0b0;
 
 %primary-h1 {
 	display: inline-block; 
@@ -150,12 +151,9 @@ header {
 		p {
 			font-size: 17px; 
 			line-height: 1.5; 
-			color: #b1b0b0;
+			color: $text-color;
 			padding: 0 27px; 
-		}
-
-		//phone padding: 7px 0 1px;
-		//nav padding: 10px 0 6px; 
+		} 
 	}
 }
 
@@ -187,7 +185,7 @@ header {
 	p {
 		font-size: 16px;
 		line-height: 18px;
-		color: #b1b0b0; 
+		color: $text-color; 
 		padding: 0 37px;    
 	}
 }
@@ -206,7 +204,7 @@ header {
 			font-size: 16px;
 			margin: 11px 0 58px;
 			padding: 0 52px;
-			color: #b1b0b0;
+			color: $text-color;
 		}
 	}
 	.wrap {
@@ -278,7 +276,7 @@ header {
 		}
 
 		&+p {
-			color: #b1b0b0;
+			color: $text-color;
 		    font-size: 22px;
 		    word-spacing: 2px;
 		    line-height: 25px;
