@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 #about .content h1, #portfolio h1 {
   display: inline-block;
@@ -66,12 +67,32 @@ header nav {
           border-top: 5px solid #f36b47; }
 
 #home {
+  position: relative;
   padding: 145px 0 103px;
-  color: white;
-  background: url(../images/slider.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  color: white; }
+  #home .slider .slider-item {
+    display: none;
+    /* Все слайды скрыты */
+    transition: opacity 500ms linear; }
+    #home .slider .slider-item:first-child {
+      display: block; }
+  #home .slider img {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; }
+  #home .slider button {
+    position: absolute;
+    font-size: 100px;
+    border: none;
+    background: none;
+    color: #f36b47;
+    top: 50%; }
+    #home .slider button.prev {
+      left: 7%; }
+    #home .slider button.next {
+      right: 7%; }
   #home p {
     font-weight: 500;
     font-size: 18px;

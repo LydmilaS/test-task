@@ -2,6 +2,7 @@
 
 $primary-color: #f36b47;
 $text-color: #b1b0b0;
+$border: 8px solid $primary-color;
 
 %primary-h1 {
 	display: inline-block; 
@@ -103,12 +104,46 @@ header {
 }
 
 #home {
+	position: relative;
 	padding: 145px 0 103px; 
 	color: white;
-	background: url(../images/slider.jpg) no-repeat;
-	-webkit-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover; 
+	
+	.slider {
+	
+		.slider-item {
+			display: none; /* Все слайды скрыты */
+			transition: opacity 500ms linear;
+			
+			&:first-child {
+				display: block; 
+			}
+		}
+		
+		img {
+			z-index: -2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;    
+		}
+
+		button {
+			position: absolute;
+			font-size: 100px;
+			border: none;
+			background: none; 
+			color: $primary-color;
+			top: 50%;
+			
+			&.prev {
+				left: 7%; 
+			}
+
+			&.next {
+				right: 7%; 
+			}
+		}
+	}
 	
 	p {
 		font-weight: 500;
@@ -140,7 +175,7 @@ header {
 	}
 
 	.content {
-		border-bottom: 8px solid $primary-color; 
+		border-bottom: $border; 
 		padding: 23px 0 31px; 
 		h1 {
 			@extend %primary-h1;
@@ -158,7 +193,7 @@ header {
 }
 
 #services {
-	border-bottom: 8px solid $primary-color; 
+	border-bottom: $border; 
 	padding: 50px 25px 22px; 
 	overflow: hidden;
 	
