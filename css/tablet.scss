@@ -1,43 +1,17 @@
 @media screen and (min-width: 785px) {
 
-	header {
-		padding: 16px; 
-		.logo { 
-			font-size: 36px;
-			padding-bottom: 0;
-			float: left;
-			a {
-				padding-left: 12px;
-			}
-		}
-
-		nav {
-			float: right;
-			overflow: hidden; 
-		}
-		
-		.topnav {
-			padding: 7px 26px 0 0;
-			text-transform: uppercase;
-			font-weight: 500; 
-			margin: 0;
-			
-			li {
-			    word-spacing: 4px;
-			}
-		}
-	}
+	
 
 	#home {
-		padding: 208px 0 149px; 
+		padding: 209px 0 146px; 
 		 p {
 		 	font-size: 25px;
     		font-weight: 500;
-    		padding: 7px 64px; 
+    		padding: 12px 64px; 
     		margin-bottom: 18px; 
     		
     		&:last-child {
-    			padding: 7px 52px; 
+    			padding: 12px 52px; 
     		}
 		 } 
 	}
@@ -45,7 +19,7 @@
 	#about {
 		header {
 			font-size: 20px;
-			padding: 34px 0; 
+			padding: 39px 0; 
 			a {
 				font-size: 22px; 
 			}  
@@ -55,7 +29,7 @@
 			border-bottom: none; 
 			h1 {
 				font-size: 30px;
-    			margin: 24px 0 35px;
+    			margin: 24px 0 34px;
 			}
 
 			p {
@@ -74,7 +48,7 @@
 		border-bottom: none;
 		
 		.item-service {
-		    margin-bottom: 57px;
+		    margin-bottom: 60px;
 		    width: 50%; 
 		} 
 
@@ -98,13 +72,13 @@
 		
 		h1 {
 		    font-size: 30px;
-		    margin: 10px 0px;
+		    margin: 10px 0px 15px;
 		    padding-bottom: 5px;
 		    
 		    &+p {
 				font-size: 16px;
 			    line-height: 25px;
-			    margin: 2px auto 40px;
+			    margin: 0 auto 40px;
 			    word-spacing: 1px;
 			}
 		}
@@ -114,17 +88,18 @@
 		}
 
 		.post-portfolio {
-			margin-bottom: 49px;
+			margin-bottom: 53px;
 			float: left;
 			width: 50%; 
 			a {
 			    font-size: 14px; 
-			    margin: 9px 0 0;
+			    margin-top: 8px;
+    			padding-bottom: 4px;
 			}
 
 			span {
-				font-size: 1.1rem;
-				padding: 9px;
+				font-size: 11px;
+				padding: 10px;
     			display: block; 
     		}
 		}	
@@ -135,20 +110,22 @@
     	padding-bottom: 40px; 
     	
     	p {
-		    font-size: 15px;
+		    font-size: $font-paragraph-medium;
 		    line-height: 25px;
 		    padding: 24px 100px;
 		}
     }
 
     .contact {
-    	padding: 57px 0 104px; 
+    	padding: 57px 0 114px; 
     	
     	h1 {
     		font-size: 30px;
+    		margin: 20px 0 9px;
+    		padding-bottom: 10px;
     		 
     		&+p {
-    			font-size: 15px;
+    			font-size: $font-paragraph-medium;
 			    line-height: 1.7;
 			    padding: 20px 60px 27px;
 			    word-spacing: 3px;
@@ -166,6 +143,7 @@
     		overflow: hidden;
     		
     		li {
+    			width: 33.333333%;
     			font-size: 18px;
     			display: inline-block; 
     			text-align: center; 
@@ -178,12 +156,12 @@
     	}
 
     	button[type="submit"] {
-    		margin: 14px auto;
+    		margin: 16px auto;
     	}
     }
 
     footer {
-    	padding: 15px 0 20px;
-    	font-size: 15px;
+    	padding: 20px 0;
+    	font-size: $font-paragraph-medium;
     }
 }

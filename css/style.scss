@@ -1,139 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 @import "variables";
-
-* {
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box; 
-}
-
-body {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;   
-}
-
-.container {
-	max-width: 1170px; 
-	text-align: center;
-	overflow: hidden;
-	margin: 0 auto;
-}
-
-img {
-	max-width: 100%;
-	height: auto; 
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-	
-	&:hover {
-		text-decoration: none;
-		color: inherit;
-	}
-}
-
-p {
-	margin-bottom: 0; 
-}
-
-header {
-	.logo {
-		font-size: 66px;
-		padding-bottom: 92px; 
-		
-		span {
-			color: $primary-color;
-		}
-	}
-
-	nav {
-		position: relative;
-		margin-bottom: 12px; 
-		padding: 0;   
-	}
-
-	.topnav {
-		margin: 12px 4px 0 0;
-		overflow: hidden;
-		li {
-			float: left;
-			padding: 10px 15px; 
-			
-			&.icon {
-				display: none;
-					
-				button {
-					cursor: pointer;
-					background: none;
-					border: none;
-				}
-
-				.icon-bar {
-				    width: 46px;
-				    height: 5px;
-				    display: block;
-				    margin-bottom: 5px; 
-				    background-color: $primary-color;
-				}
-				
-			}
-
-			a {
-				position: relative;
-			    display: block;
-			    text-align: center;
-			    transition: 0.3s;
-			    		    
-			    &.active,
-					&:hover {
-						-webkit-box-shadow: inset 0 -2px 0 0 $primary-color; 
-						box-shadow: inset 0 -2px 0 0 $primary-color; 
-						background: none; 
-						&:after {
-							content: "";
-						    position: absolute;
-						    bottom: -5px;
-						    left: 40%;
-						    width: 0;
-						    height: 0;
-						    border-left: 5px solid transparent;
-						    border-right: 5px solid transparent;
-						    border-top: 5px solid $primary-color; 
-						}
-
-					}
-			}
-		}
-	}
-	@media screen and (max-width:784px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-
-@media screen and (max-width:784px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
-
-}
+@import "base";
+@import "header";
 
 #home {
     position: relative;
@@ -160,18 +27,18 @@ header {
 
 		button {
 			position: absolute;
-			font-size: 100px;
+			font-size: 88px;
 			border: none;
 			background: none; 
 			color: $primary-color;
-			top: 50%;
+			top: 40%;
 			
 			&.prev {
-				left: 7%; 
+				left: 1.5%; 
 			}
 
 			&.next {
-				right: 7%; 
+				right: 1.5%; 
 			}
 		}
 	}
@@ -352,7 +219,7 @@ header {
 		    font-size: 22px;
 		    word-spacing: 2px;
 		    line-height: 25px;
-		    padding: 46px 26px 114px;
+		    padding: 46px 11px 114px;
 		}
 	}
 
@@ -433,8 +300,10 @@ header {
 		background-color: $primary-color;  
 		font-size: 18px; 
 		padding: 11px 0;
-		border: none;
 		margin: 15px auto; 
+		border: 1px solid transparent;
+		-webkit-border-radius: 2px; 
+		 border-radius: 2px;  
 		
 		&:hover {
 			background-color: coral;

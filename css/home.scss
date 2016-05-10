@@ -2,14 +2,10 @@
 	header {
 		padding: 17px;
 		
-		.logo {
-			font-size: 22px;
-		    text-align: left;
-		    padding: 11px 22px;
-			width: 25%;  
-			font-size: 36px;
-			padding-bottom: 0; 
-			
+		
+
+		nav {
+			margin-bottom: 7px;
 		}
 	}
 
@@ -17,7 +13,7 @@
 		.content {
 			h1 {
 				font-size: 25px;
-			    margin: 27px 0 33px;
+			    margin: 30px 0 33px;
 			    padding-bottom: 2px;
 			}
 
@@ -41,13 +37,13 @@
 	#portfolio {
 		h1 {
 		    font-size: 25px;
-		    margin: 0;
+		    margin: 3px 0 0;
 		    padding-bottom: 2px;
 		    
 		    &+p {
 				font-size: 16px; 
 				line-height: 1.6;
-				margin: 20px auto 26px;
+				margin: 20px auto 28px;
 				max-width: 72%; 
 			}
 		}
@@ -55,18 +51,19 @@
 		.list-portfolio {
 			padding: 0;
 			text-align: right;
-			margin: 0 -15px;
+			overflow: hidden;
 		}
 
 		.post-portfolio {
 			width: 25%;
-			float: left; 
+			float: left;
+			margin-bottom: 49px;  
 			a {
 			    margin: 8px 18px 0;
 			}
 
 			span {
-				padding: 9px 19px;
+				padding: 11px 19px;
     			display: block; 
     		}
 		}	
@@ -87,7 +84,8 @@
     	
     	h1 {
     		font-size: 25px;
-    		padding-bottom: 3px; 
+    		padding-bottom: 3px;
+    		margin: 27px 0 10px; 
     		 
     		&+p {
     			font-size: 14px;
@@ -117,6 +115,7 @@
     		max-width: 345px;
     		margin: inherit;     		
     		li {
+    			width: 100%; 
     			text-align: left; 
     			padding: 6px 0 2px;
     			line-height: 1.5; 

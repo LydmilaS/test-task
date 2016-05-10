@@ -1,6 +1,7 @@
 $primary-color: #f36b47;
 $text-color: #b1b0b0;
 $border: 8px solid $primary-color;
+$font-paragraph-medium: 15px;
 
 %primary-h1 {
 	display: inline-block; 
@@ -8,4 +9,14 @@ $border: 8px solid $primary-color;
 	font-size: 26px;
 	margin-top: 20px;
 	padding-bottom: 3px; 
+}
+
+@mixin breakpoint($feature, $value) {
+    // Set global device param
+    $media: only screen;
+
+    // Media queries supported
+    @media #{$media} and ($feature: $value) {
+        @content;
+    }
 }

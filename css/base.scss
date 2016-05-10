@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;   
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.container {
+    padding: 0 15px; 
+    max-width: 1170px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+	
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -1,0 +1,143 @@
+header {
+    @include breakpoint(min-width, 785px) {
+        padding: 16px;
+    }
+
+    @include breakpoint(min-width, 992px) {
+        padding: 17px;
+    }
+    
+    .logo {
+        font-size: 66px;
+        padding-bottom: 92px; 
+
+        @include breakpoint(min-width, 785px) {
+            font-size: 36px;
+            padding: 9px 0 9px 2px;
+            float: left;
+
+            a {
+               padding-left: 12px;
+            }
+        }
+        @include breakpoint(min-width, 992px) {
+            font-size: 22px;
+            text-align: left;
+            padding: 11px 22px;
+            width: 25%;
+            padding-bottom: 0;
+        }
+
+        span {
+            color: $primary-color;
+        }
+    }
+    
+    nav {
+        position: relative;
+        margin-bottom: 12px; 
+        padding: 0;
+
+        @include breakpoint(min-width, 785px) {
+            float: right;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        @include breakpoint(min-width, 992px) {
+            margin-bottom: 7px;
+        }
+	}
+    
+    .topnav {
+        margin: 12px -11px 0 0;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        @include breakpoint(min-width, 785px) {
+            font-size: $font-paragraph-medium;
+            padding-top: 11px;
+            margin: 0;
+        }
+
+        li {
+            word-spacing: 4px;
+            float: left;
+            padding: 10px 15px;
+
+            @include breakpoint(max-width, 784px) {
+                display: none;
+            }
+
+            &.icon {
+                display: none;
+
+                @include breakpoint(max-width, 784px) {
+                    float: right;
+                    display: inline-block;
+                }
+
+                .icon-bar {
+                    width: 46px;
+                    height: 5px;
+                    display: block;
+                    margin-bottom: 5px;
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            text-align: center;
+            transition: 0.3s;
+            padding-bottom: 2px; 
+
+            &.active,
+            &:hover {
+                -webkit-box-shadow: inset 0 -2px 0 0 $primary-color; 
+                box-shadow: inset 0 -2px 0 0 $primary-color; 
+                background: none; 
+                
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 40%;
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid $primary-color;
+                }
+            }
+        }
+    }
+
+    .responsive {
+        text-align: left;
+
+        @include breakpoint(max-width, 784px) {
+            position: relative;
+               
+            li {
+                float: none;
+               	display: block;
+
+               	a {
+               	    float: left;
+               	    clear: both;
+               	    margin-bottom: 10px;
+               	}
+            }
+
+            .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
