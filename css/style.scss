@@ -1,13 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
-
-$primary-color: #f36b47;
-$text-color: #b1b0b0;
-$border: 8px solid $primary-color;
+@import "variables";
 
 %primary-h1 {
 	display: inline-block; 
 	font-weight: 500;
 	font-size: 26px;
+	margin-top: 20px;
+	padding-bottom: 3px; 
+}
+
+* {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
 }
 
 body {
@@ -18,6 +23,8 @@ body {
 .container {
 	max-width: 1170px; 
 	text-align: center;
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 img {
@@ -27,6 +34,7 @@ img {
 
 a {
 	color: inherit;
+	text-decoration: none;
 	
 	&:hover {
 		text-decoration: none;
@@ -40,45 +48,53 @@ p {
 
 header {
 	.logo {
-		font-size: 68px;
-		padding-bottom: 74px; 
+		font-size: 66px;
+		padding-bottom: 92px; 
 		
 		span {
 			color: $primary-color;
 		}
 	}
 
-	.navbar {
-		min-height: 20px;
-		margin-bottom: 6px; 
+	nav {
+		position: relative;
+		margin-bottom: 12px; 
 		padding: 0;   
 	}
-	nav {
+
+	.topnav {
+		margin: 12px 4px 0 0;
 		overflow: hidden;
-		
-		span {
-			background-color: $primary-color;
-		}
-
-		.navbar-toggle .icon-bar {
-		    width: 46px;
-		    height: 4px;
-		}
-
-		.navbar-toggle {
-			margin: 15px 12px 0 0; 
-		}
-
-		.nav {
-			li {
-				padding: 10px 15px; 
-				float: left;
-				clear: both;
-				a {
-					position: relative;
-					padding: 0;
+		li {
+			float: left;
+			padding: 10px 15px; 
+			
+			&.icon {
+				display: none;
 					
-					&.active,
+				button {
+					cursor: pointer;
+					background: none;
+					border: none;
+				}
+
+				.icon-bar {
+				    width: 46px;
+				    height: 5px;
+				    display: block;
+				    margin-bottom: 5px; 
+				    background-color: $primary-color;
+				}
+				
+			}
+
+			a {
+				position: relative;
+			    display: block;
+			    text-align: center;
+			    transition: 0.3s;
+			    		    
+			    &.active,
 					&:hover {
 						-webkit-box-shadow: inset 0 -2px 0 0 $primary-color; 
 						box-shadow: inset 0 -2px 0 0 $primary-color; 
@@ -96,21 +112,44 @@ header {
 						}
 
 					}
-				}
 			}
 		}
-
 	}
+	@media screen and (max-width:784px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width:784px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 }
 
 #home {
-	position: relative;
-	padding: 145px 0 103px; 
+    position: relative;
+	padding: 145px 0 101px; 
 	color: white;
 	
 	.slider {
-	
-		.slider-item {
+        .slider-item {
 			display: none; /* Все слайды скрыты */
 			transition: opacity 500ms linear;
 			
@@ -150,11 +189,11 @@ header {
 		font-size: 18px;
 		background-color: rgba(0, 0, 0, 0.6);
 		display: table;
-	    margin: 0 auto 11px;
-	    padding: 4px 45px;
+	    margin: 0 auto 14px;
+	    padding: 6px 45px;
 		
 		&:last-child { 
-			padding: 4px 30px; 
+			padding: 6px 30px; 
 		}
 	}
 }
@@ -162,7 +201,7 @@ header {
 #about {
 	header {
 		overflow: hidden;
-		padding: 21px 0; 
+		padding: 25px 0; 
 		color: white;
 		background-color: $primary-color;
 		font-size: 12px;
@@ -200,6 +239,8 @@ header {
 	.item-service {
 		text-align: center;
 		margin-bottom: 28px;
+		float: left;
+		padding: 0 15px; 
 	}
 
 	.fa {
@@ -231,7 +272,8 @@ header {
 	
 	h1 {
 		@extend %primary-h1;
-		padding-bottom: 2px; 
+		padding-bottom: 2px;
+		margin-bottom: 12px;  
 		border-bottom: 2px solid $primary-color;
 		
 		&+p {
@@ -252,8 +294,9 @@ header {
 		a {
 			display: block;
 			color: #fe5c32;
-			font-weight: 500;
-			font-size: 21px;  
+			font-weight: 400;
+			font-size: 22px;
+		    margin: 5px 8px 0;
 			border-bottom: 1px solid grey; 
 			
 			&:hover {
@@ -262,7 +305,7 @@ header {
 		}
 
 		span {
-			padding: 2px 0 7px; 
+			padding: 6px 0 10px; 
 			display: block;
 			color: #737272;
 			font-size: 16px; 
@@ -278,6 +321,7 @@ header {
 	
 	h2 {
 		font-size: 58px;
+		margin: 24px 0 12px;
 		span {
 			color: $primary-color;
 		} 
@@ -286,19 +330,20 @@ header {
 	p {
 		font-size: 22px;
 		line-height: 25px;
-		padding: 33px 8px 21px;   
+		padding: 33px 22px 21px;   
 	}
 }
 
 .contact {
-	padding: 38px 0 129px; 
+	padding: 38px 0 140px; 
 	
 	h1 {
 		position: relative;
 		font-weight: 400;
 		font-size: 44px; 
 		display: inline-block; 
-		padding-bottom: 6px;  
+		padding-bottom: 6px; 
+		margin: 24px 0 12px; 
 		
 		&:after {
 			content: '';
@@ -315,7 +360,7 @@ header {
 		    font-size: 22px;
 		    word-spacing: 2px;
 		    line-height: 25px;
-		    padding: 46px 11px 114px;
+		    padding: 46px 26px 114px;
 		}
 	}
 
@@ -349,7 +394,7 @@ header {
 
 	.details {
 		padding-top: 85px; 
-		max-width: 410px;
+		max-width: 375px;
 		margin: 0 auto;  
 		 li {
 			display: block;
@@ -368,7 +413,10 @@ header {
 			color:  $primary-color;
 		}
 	}
-
+	
+	form {
+		padding: 0 15px; 
+	}
 	input, textarea {
 		width: 98%; 
 		max-width: 530px;
@@ -376,9 +424,14 @@ header {
 		border-radius: 3px; 
 		border: 1px solid lightgrey;
 		background: #f0f0f0;
-		padding: 15px 16px;  
+		padding: 17px 16px;  
 		margin: 0 auto 6px; 
 		letter-spacing: 1px; 
+		font-size: 15px; 
+	}
+
+	textarea {
+		height: 170px; 
 	}
 
 	input[type="submit"] {
@@ -387,9 +440,9 @@ header {
 		color: white;
 		background-color: $primary-color;  
 		font-size: 18px; 
-		padding: 10px 0;
+		padding: 11px 0;
 		border: none;
-		margin: 10px auto; 
+		margin: 15px auto; 
 		
 		&:hover {
 			background-color: coral;
@@ -401,7 +454,7 @@ footer {
 	background-color: $primary-color;
 	color: white;
 	margin-bottom: 95px; 
-	padding: 17px 0;
+	padding: 20px 0;
 	font-size: 16px; 
 	word-spacing: 2px;  
 	

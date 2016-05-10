@@ -1,16 +1,15 @@
 @media screen and (min-width: 992px) {
 	header {
-		padding: 17px; 
+		padding: 17px;
+		
 		.logo {
-		    font-size: 22px;
+			font-size: 22px;
 		    text-align: left;
 		    padding: 11px 22px;
-		}
-
-		.navbar-nav {	
-			li {
-				letter-spacing: 1px;
-			}
+			width: 25%;  
+			font-size: 36px;
+			padding-bottom: 0; 
+			
 		}
 	}
 

@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>UIBrash</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/slider.js"></script>
-	<link href="css/style.css" rel="stylesheet">
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UIBrash</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/topmenu.js"></script>
+    <script src="js/slider.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
-	<div class="container">
-	    <div class="row">
-	    	<nav class="navbar col-xs-12 col-sm-9 col-sm-push-3 col-md-offset-1 col-md-8">
-	        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span> 
-	        	</button>
-	        	<div class="collapse navbar-collapse navbar-right" id="myNavbar" >
-	        		<ul class="nav navbar-nav">
-				        <li><a href="#home" class="active">Home</a></li>
-				        <li><a href="#about">About Us</a></li>
-				        <li><a href="#services">Services</a></li>
-				        <li><a href="#portfolio">Portfolio</a>
-				        <li><a href="#contact">Contact Us</a></li>
-		    		</ul>
-	        	</div>
-        	</nav>
-	    	<div class="logo col-xs-12 col-sm-3 col-sm-pull-9">
-	        	<a href="#"><span>UI</span>Brush</a>
-	        </div>
-	        
-	    </div>
-	</div>
+    <div class="container">
+        <nav>
+            <ul class="topnav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a>
+                <li><a href="#contact">Contact Us</a></li>
+                <li class="icon">
+                	<button type="button"  onclick="responsiveMenu()">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span> 
+		        	</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="javascript:void(0);"><span>UI</span>Brush</a>
+        </div>
+    </div>
 </header>
 <section id="home">
 	<div class="container">
@@ -75,7 +71,7 @@
 <section id="about">
 	<header>
 		<div class="container">
-			<p>Lorem ipsum dolor sit amet <a href="#">Consectetuer Adipiscing Elit</a></p>
+			<p>Lorem ipsum dolor sit amet <a href="javascript:void(0);">Consectetuer Adipiscing Elit</a></p>
 		</div>
 	</header>
 	<div class="content container">
@@ -84,68 +80,70 @@
 	</div>
 </section>
 <section id="services">
-	<div class="col-xs-12 col-sm-6 col-md-3 item-service">
+    <ul>
+	<li class="item-service">
 		<span class="fa fa-th-list"></span>
-		<h2><a href="#">Innovative Design</a></h2>
+		<h2><a href="javascript:void(0);">Innovative Design</a></h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eturet dolore magna aligua.
 		</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3 item-service">
+	</li>
+	<li class="item-service">
 		<span class="fa fa-code"></span>
-		<h2><a href="#">Clean Coding</a></h2>
+		<h2><a href="javascript:void(0);">Clean Coding</a></h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eturet dolore magna aligua.
 		</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3 item-service">
+	</li>
+	<li class="item-service">
 		<span class="fa fa-location-arrow"></span>
-		<h2><a href="#">Quick Delivery</a></h2>
+		<h2><a href="javascript:void(0);">Quick Delivery</a></h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eturet dolore magna aligua.
 		</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3 item-service">
+	</li>
+	<li class="item-service">
 		<span class="fa fa-phone"></span>
-		<h2><a href="#">Best Support</a></h2>
+		<h2><a href="javascript:void(0);">Best Support</a></h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eturet dolore magna aligua.
 		</p>
-	</div>
+	</li>
+	</ul>
 </section>
 <section id="portfolio" class="container">
 	<h1>Recent Projects</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eturet dolore magna aliqua.</p>
-	<div class="list-portfolio">
-		<div class="col-xs-12 col-sm-6 col-md-3 post-portfolio">
+	<ul class="list-portfolio">
+		<li class="post-portfolio">
 			<div class="wrap">
 				<img src="images/portone.jpg" alt="portfolio-img">
-				<a href="#">Portfolio One</a>
+				<a href="javascript:void(0);">Portfolio One</a>
 				<span>Lorem ipsum dolor sit amet</span>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 post-portfolio">
+		</li>
+		<li class="post-portfolio">
 			<div class="wrap">
 				<img src="images/porttwo.jpg" alt="portfolio-img">
-				<a href="#">Portfolio Two</a>
+				<a href="javascript:void(0);">Portfolio Two</a>
 				<span>Lorem ipsum dolor sit amet</span>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 post-portfolio">
+		</li>
+		<li class="post-portfolio">
 			<div class="wrap">
 				<img src="images/portthree.jpg" alt="portfolio-img">
-				<a href="#">Portfolio Three</a>
+				<a href="javascript:void(0);">Portfolio Three</a>
 				<span>Lorem ipsum dolor sit amet</span>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3 post-portfolio">
+		</li>
+		<li class="post-portfolio">
 			<div class="wrap">
 				<img src="images/portfour.jpg" alt="portfolio-img">
-				<a href="#">Portfolio Four</a>
+				<a href="javascript:void(0);">Portfolio Four</a>
 				<span>Lorem ipsum dolor sit amet</span>
 			</div>
-		</div>
-	</div>
+		</li>
+	</ul>
 </section>
 <section class="talk">
 	<div class="container">
@@ -158,20 +156,20 @@
 		<h1>Contact Us</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore eturet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitiation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore eturet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitiation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. </p>
 		<div class="row">
-		<div class="col-md-6 map"><img src="images/map.jpg" alt="map"></div>
-		<div class="col-md-6 contact-info">
+		<div class="map"><img src="images/map.jpg" alt="map"></div>
+		<div class="contact-info">
 			<h3>Contact Details:</h3>
 			<ul class="details">
-				<li class="col-sm-12 fa fa-phone">(+91) 0975 720 3582</li>
-				<li class="col-sm-6 col-md-12 fa fa-envelope-o"> Email@domain.com</li>
-				<li class="col-sm-6 col-md-12 fa fa-map-marker">No.235, New St, 25<sup>th</sup> Sector,London, England</li>
+				<li class="fa-phone">(+91) 0975 720 3582</li>
+				<li class="fa fa-envelope-o"> Email@domain.com</li>
+				<li class="fa fa-map-marker">No.235, New St, 25<sup>th</sup> Sector,London, England</li>
 			</ul>
-			<form action="#" method="GET">
+			<form action="javascript:void(0);" method="GET">
 				<ul class="form">
 					<li><input type="text" placeholder="Name" value="" /></li>
 					<li><input type="email" placeholder="Email" value="" /></li>
-					<li><textarea placeholder="Message" rows="7"></textarea></li>
-					<li><input type="submit" value="Submit" /></li>
+					<li><textarea placeholder="Message" rows="8"></textarea></li>
+					<li><input type="submit" /></li>
 				</ul>
 			</form>
 		</div>
@@ -180,7 +178,7 @@
 </section>
 <footer>
 <div class="container">
-	<p>Copyright &copy; 2015 <a href="#">Default Value</a></p>
+	<p>Copyright &copy; 2015 <a href="javascript:void(0);">Default Value</a></p>
 </div>
 </footer>
 </body>

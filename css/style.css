@@ -3,7 +3,21 @@
 #about .content h1, #portfolio h1 {
   display: inline-block;
   font-weight: 500;
-  font-size: 26px; }
+  font-size: 26px;
+  margin-top: 20px;
+  padding-bottom: 3px; }
+
+#about .content h1, #portfolio h1 {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 20px;
+  padding-bottom: 3px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Ubuntu';
@@ -11,14 +25,17 @@ body {
 
 .container {
   max-width: 1170px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto; }
 
 img {
   max-width: 100%;
   height: auto; }
 
 a {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
   a:hover {
     text-decoration: none;
     color: inherit; }
@@ -27,35 +44,42 @@ p {
   margin-bottom: 0; }
 
 header .logo {
-  font-size: 68px;
-  padding-bottom: 74px; }
+  font-size: 66px;
+  padding-bottom: 92px; }
   header .logo span {
     color: #f36b47; }
-header .navbar {
-  min-height: 20px;
-  margin-bottom: 6px;
-  padding: 0; }
 header nav {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 0; }
+header .topnav {
+  margin: 12px 4px 0 0;
   overflow: hidden; }
-  header nav span {
-    background-color: #f36b47; }
-  header nav .navbar-toggle .icon-bar {
-    width: 46px;
-    height: 4px; }
-  header nav .navbar-toggle {
-    margin: 15px 12px 0 0; }
-  header nav .nav li {
-    padding: 10px 15px;
+  header .topnav li {
     float: left;
-    clear: both; }
-    header nav .nav li a {
+    padding: 10px 15px; }
+    header .topnav li.icon {
+      display: none; }
+      header .topnav li.icon button {
+        cursor: pointer;
+        background: none;
+        border: none; }
+      header .topnav li.icon .icon-bar {
+        width: 46px;
+        height: 5px;
+        display: block;
+        margin-bottom: 5px;
+        background-color: #f36b47; }
+    header .topnav li a {
       position: relative;
-      padding: 0; }
-      header nav .nav li a.active, header nav .nav li a:hover {
+      display: block;
+      text-align: center;
+      transition: 0.3s; }
+      header .topnav li a.active, header .topnav li a:hover {
         -webkit-box-shadow: inset 0 -2px 0 0 #f36b47;
         box-shadow: inset 0 -2px 0 0 #f36b47;
         background: none; }
-        header nav .nav li a.active:after, header nav .nav li a:hover:after {
+        header .topnav li a.active:after, header .topnav li a:hover:after {
           content: "";
           position: absolute;
           bottom: -5px;
@@ -65,10 +89,29 @@ header nav {
           border-left: 5px solid transparent;
           border-right: 5px solid transparent;
           border-top: 5px solid #f36b47; }
+@media screen and (max-width: 784px) {
+  header ul.topnav li {
+    display: none; }
+  header ul.topnav li.icon {
+    float: right;
+    display: inline-block; } }
+@media screen and (max-width: 784px) {
+  header ul.topnav.responsive {
+    position: relative; }
+  header ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  header ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+  header ul.topnav.responsive li a {
+    display: block;
+    text-align: left; } }
 
 #home {
   position: relative;
-  padding: 145px 0 103px;
+  padding: 145px 0 101px;
   color: white; }
   #home .slider .slider-item {
     display: none;
@@ -98,14 +141,14 @@ header nav {
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.6);
     display: table;
-    margin: 0 auto 11px;
-    padding: 4px 45px; }
+    margin: 0 auto 14px;
+    padding: 6px 45px; }
     #home p:last-child {
-      padding: 4px 30px; }
+      padding: 6px 30px; }
 
 #about header {
   overflow: hidden;
-  padding: 21px 0;
+  padding: 25px 0;
   color: white;
   background-color: #f36b47;
   font-size: 12px; }
@@ -131,7 +174,9 @@ header nav {
   overflow: hidden; }
   #services .item-service {
     text-align: center;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+    float: left;
+    padding: 0 15px; }
   #services .fa {
     color: #f36b47;
     font-size: 30px; }
@@ -152,6 +197,7 @@ header nav {
   overflow: hidden; }
   #portfolio h1 {
     padding-bottom: 2px;
+    margin-bottom: 12px;
     border-bottom: 2px solid #f36b47; }
     #portfolio h1 + p {
       line-height: 24px;
@@ -168,13 +214,14 @@ header nav {
     #portfolio .post-portfolio a {
       display: block;
       color: #fe5c32;
-      font-weight: 500;
-      font-size: 21px;
+      font-weight: 400;
+      font-size: 22px;
+      margin: 5px 8px 0;
       border-bottom: 1px solid grey; }
       #portfolio .post-portfolio a:hover {
         color: white; }
     #portfolio .post-portfolio span {
-      padding: 2px 0 7px;
+      padding: 6px 0 10px;
       display: block;
       color: #737272;
       font-size: 16px;
@@ -185,22 +232,24 @@ header nav {
   background-color: #7a7a7a;
   color: white; }
   .talk h2 {
-    font-size: 58px; }
+    font-size: 58px;
+    margin: 24px 0 12px; }
     .talk h2 span {
       color: #f36b47; }
   .talk p {
     font-size: 22px;
     line-height: 25px;
-    padding: 33px 8px 21px; }
+    padding: 33px 22px 21px; }
 
 .contact {
-  padding: 38px 0 129px; }
+  padding: 38px 0 140px; }
   .contact h1 {
     position: relative;
     font-weight: 400;
     font-size: 44px;
     display: inline-block;
-    padding-bottom: 6px; }
+    padding-bottom: 6px;
+    margin: 24px 0 12px; }
     .contact h1:after {
       content: '';
       width: 100%;
@@ -214,7 +263,7 @@ header nav {
       font-size: 22px;
       word-spacing: 2px;
       line-height: 25px;
-      padding: 46px 11px 114px; }
+      padding: 46px 26px 114px; }
   .contact .map {
     text-align: center;
     padding: 0; }
@@ -237,7 +286,7 @@ header nav {
       left: 15%; }
   .contact .details {
     padding-top: 85px;
-    max-width: 410px;
+    max-width: 375px;
     margin: 0 auto; }
     .contact .details li {
       display: block;
@@ -250,6 +299,8 @@ header nav {
     .contact .details .fa:before {
       padding-right: 34px;
       color: #f36b47; }
+  .contact form {
+    padding: 0 15px; }
   .contact input, .contact textarea {
     width: 98%;
     max-width: 530px;
@@ -257,18 +308,21 @@ header nav {
     border-radius: 3px;
     border: 1px solid lightgrey;
     background: #f0f0f0;
-    padding: 15px 16px;
+    padding: 17px 16px;
     margin: 0 auto 6px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-size: 15px; }
+  .contact textarea {
+    height: 170px; }
   .contact input[type="submit"] {
     width: 70%;
     max-width: 400px;
     color: white;
     background-color: #f36b47;
     font-size: 18px;
-    padding: 10px 0;
+    padding: 11px 0;
     border: none;
-    margin: 10px auto; }
+    margin: 15px auto; }
     .contact input[type="submit"]:hover {
       background-color: coral; }
 
@@ -276,33 +330,31 @@ footer {
   background-color: #f36b47;
   color: white;
   margin-bottom: 95px;
-  padding: 17px 0;
+  padding: 20px 0;
   font-size: 16px;
   word-spacing: 2px; }
   footer a:hover {
     text-decoration: underline; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 785px) {
   header {
     padding: 16px; }
     header .logo {
       font-size: 36px;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      float: left; }
       header .logo a {
         padding-left: 12px; }
-    header .navbar-nav {
-      padding-top: 7px;
+    header nav {
+      float: right;
+      overflow: hidden; }
+    header .topnav {
+      padding: 7px 26px 0 0;
       text-transform: uppercase;
       font-weight: 500;
-      margin: 0;
-      width: 100%;
-      padding-right: 26px; }
-      header .navbar-nav li {
-        float: left;
-        padding: 0;
+      margin: 0; }
+      header .topnav li {
         word-spacing: 4px; }
-    header nav .nav li {
-      clear: none; }
 
   #home {
     padding: 208px 0 149px; }
@@ -390,6 +442,10 @@ footer {
     .contact h3 {
       margin-top: 80px;
       font-size: 30px; }
+    .contact .map,
+    .contact .contact-info {
+      float: left;
+      width: 50%; }
     .contact .details {
       padding-top: 35px;
       max-width: 100%;
@@ -413,9 +469,10 @@ footer {
     header .logo {
       font-size: 22px;
       text-align: left;
-      padding: 11px 22px; }
-    header .navbar-nav li {
-      letter-spacing: 1px; }
+      padding: 11px 22px;
+      width: 25%;
+      font-size: 36px;
+      padding-bottom: 0; }
 
   #about .content h1 {
     font-size: 25px;
