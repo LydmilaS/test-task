@@ -7,20 +7,13 @@
   margin-top: 20px;
   padding-bottom: 3px; }
 
-#about .content h1, #portfolio h1 {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 26px;
-  margin-top: 20px;
-  padding-bottom: 3px; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400; }
 
 .container {
@@ -314,7 +307,7 @@ header .topnav {
     font-size: 15px; }
   .contact textarea {
     height: 170px; }
-  .contact input[type="submit"] {
+  .contact button[type="submit"] {
     width: 70%;
     max-width: 400px;
     color: white;
@@ -323,7 +316,7 @@ header .topnav {
     padding: 11px 0;
     border: none;
     margin: 15px auto; }
-    .contact input[type="submit"]:hover {
+    .contact button[type="submit"]:hover {
       background-color: coral; }
 
 footer {
@@ -387,7 +380,8 @@ footer {
     padding: 14px 15px 3px;
     border-bottom: none; }
     #services .item-service {
-      margin-bottom: 57px; }
+      margin-bottom: 57px;
+      width: 50%; }
     #services h2 {
       font-size: 18px;
       font-weight: 400;
@@ -413,7 +407,9 @@ footer {
     #portfolio .list-portfolio {
       padding: 0 35px; }
     #portfolio .post-portfolio {
-      margin-bottom: 49px; }
+      margin-bottom: 49px;
+      float: left;
+      width: 50%; }
       #portfolio .post-portfolio a {
         font-size: 14px;
         margin: 9px 0 0; }
@@ -442,10 +438,6 @@ footer {
     .contact h3 {
       margin-top: 80px;
       font-size: 30px; }
-    .contact .map,
-    .contact .contact-info {
-      float: left;
-      width: 50%; }
     .contact .details {
       padding-top: 35px;
       max-width: 100%;
@@ -457,7 +449,7 @@ footer {
         padding-bottom: 34px; }
     .contact input, .contact textarea {
       margin-bottom: 7px; }
-    .contact input[type="submit"] {
+    .contact button[type="submit"] {
       margin: 14px auto; }
 
   footer {
@@ -484,7 +476,9 @@ footer {
   #services {
     padding-top: 23px; }
     #services .item-service {
-      margin-bottom: 46px; }
+      margin-bottom: 46px;
+      width: 25%;
+      float: left; }
 
   #portfolio h1 {
     font-size: 25px;
@@ -499,11 +493,14 @@ footer {
     padding: 0;
     text-align: right;
     margin: 0 -15px; }
-  #portfolio .post-portfolio a {
-    margin: 8px 18px 0; }
-  #portfolio .post-portfolio span {
-    padding: 9px 19px;
-    display: block; }
+  #portfolio .post-portfolio {
+    width: 25%;
+    float: left; }
+    #portfolio .post-portfolio a {
+      margin: 8px 18px 0; }
+    #portfolio .post-portfolio span {
+      padding: 9px 19px;
+      display: block; }
 
   .talk {
     margin-top: 57px;
@@ -529,7 +526,9 @@ footer {
         content: none; }
     .contact .map,
     .contact .contact-info {
-      text-align: left; }
+      text-align: left;
+      float: left;
+      width: 50%; }
     .contact .details {
       padding: 0 0 0 42px;
       max-width: 345px;
@@ -544,7 +543,7 @@ footer {
         padding-right: 20px; }
     .contact form {
       padding-left: 42px; }
-      .contact form input[type="submit"] {
+      .contact form button[type="submit"] {
         width: 125px;
         padding: 9px 0;
         margin: 0px auto; }

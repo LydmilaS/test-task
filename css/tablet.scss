@@ -75,6 +75,7 @@
 		
 		.item-service {
 		    margin-bottom: 57px;
+		    width: 50%; 
 		} 
 
 		h2 {
@@ -114,6 +115,8 @@
 
 		.post-portfolio {
 			margin-bottom: 49px;
+			float: left;
+			width: 50%; 
 			a {
 			    font-size: 14px; 
 			    margin: 9px 0 0;
@@ -157,11 +160,6 @@
     		font-size: 30px;  
     	}
 		
-		.map, 
-		.contact-info {
-			float: left;
-			width: 50%; 
-		}
     	.details {
     		padding-top: 35px; 
     		max-width: 100%;
@@ -179,7 +177,7 @@
     		margin-bottom: 7px;
     	}
 
-    	input[type="submit"] {
+    	button[type="submit"] {
     		margin: 14px auto;
     	}
     }
