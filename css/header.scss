@@ -1,9 +1,9 @@
 header {
-    @include breakpoint(min-width, 785px) {
+    @include breakpoint(min-width, $bp-medium) {
         padding: 16px;
     }
 
-    @include breakpoint(min-width, 992px) {
+    @include breakpoint(min-width, $bp-large) {
         padding: 17px;
     }
     
@@ -11,7 +11,7 @@ header {
         font-size: 66px;
         padding-bottom: 92px; 
 
-        @include breakpoint(min-width, 785px) {
+        @include breakpoint(min-width, $bp-medium) {
             font-size: 36px;
             padding: 9px 0 9px 2px;
             float: left;
@@ -20,7 +20,7 @@ header {
                padding-left: 12px;
             }
         }
-        @include breakpoint(min-width, 992px) {
+        @include breakpoint(min-width, $bp-large) {
             font-size: 22px;
             text-align: left;
             padding: 11px 22px;
@@ -38,13 +38,13 @@ header {
         margin-bottom: 12px; 
         padding: 0;
 
-        @include breakpoint(min-width, 785px) {
+        @include breakpoint(min-width, $bp-medium) {
             float: right;
             overflow: hidden;
             margin: 0;
         }
 
-        @include breakpoint(min-width, 992px) {
+        @include breakpoint(min-width, $bp-large) {
             margin-bottom: 7px;
         }
 	}
@@ -55,7 +55,7 @@ header {
         text-transform: uppercase;
         font-weight: 500;
 
-        @include breakpoint(min-width, 785px) {
+        @include breakpoint(min-width, $bp-medium) {
             font-size: $font-paragraph-medium;
             padding-top: 11px;
             margin: 0;

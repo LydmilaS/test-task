@@ -1,0 +1,232 @@
+.contact {
+	padding: 38px 0 140px; 
+	
+	@include breakpoint(min-width, $bp-medium) {
+        padding: 57px 0 114px;
+    }
+
+    @include breakpoint(min-width, $bp-large) {
+        padding: 85px 0 206px; 
+    }
+	
+	h1 {
+		position: relative;
+		font-weight: 400;
+		font-size: 44px; 
+		display: inline-block; 
+		padding-bottom: 6px; 
+		margin: 24px 0 12px; 
+		
+		@include breakpoint(min-width, $bp-medium) {
+	        font-size: 30px;
+    		margin: 20px 0 9px;
+    		padding-bottom: 10px;
+	    }
+
+	    @include breakpoint(min-width, $bp-large) {
+	        font-size: 25px;
+    		padding-bottom: 3px;
+    		margin: 27px 0 10px; 
+	    }
+		
+		&:after {
+			content: '';
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			background-color: $primary-color;
+			bottom: 0;
+			left: 0; 
+		}
+
+		&+p {
+			color: $text-color;
+		    font-size: 22px;
+		    word-spacing: 2px;
+		    line-height: 25px;
+		    padding: 46px 11px 114px;
+		    
+		    @include breakpoint(min-width, $bp-medium) {
+		        font-size: $font-paragraph-medium;
+			    line-height: 1.7;
+			    padding: 20px 60px 27px;
+			    word-spacing: 3px;
+		    }
+
+		    @include breakpoint(min-width, $bp-large) {
+		        font-size: 14px;
+			    line-height: 1.8;
+			    padding: 9px 30px 53px;
+		    }
+		}
+	}
+
+	.map {
+		text-align: center;
+		padding: 0;
+		
+		@include breakpoint(min-width, $bp-large) {
+		    text-align: left;
+			float: left;
+			width: 50%;  
+		}
+		
+		img {
+			height: 100%; 
+		}
+	}
+
+	.contanct-info {
+		@include breakpoint(min-width, $bp-large) {
+		    text-align: left;
+			float: left;
+			width: 50%;  
+		}
+	}
+
+	h3 {
+		margin: 72px 0 0;
+		position: relative;
+		font-weight: 400;
+		font-size: 44px; 
+		display: inline-block; 
+		padding-bottom: 12px;  
+		
+		@include breakpoint(min-width, $bp-medium) {
+		    margin-top: 80px;
+    		font-size: 30px;  
+		}
+
+		@include breakpoint(min-width, $bp-large) {
+		    margin-top: 0;
+    		font-size: 20px;  
+		}
+
+		&:after {
+			content: '';
+			width: 70%;
+			height: 2px;
+			position: absolute;
+			background-color: $primary-color;
+			bottom: 0;
+			left: 15%; 
+			
+			@include breakpoint(min-width, $bp-large) {
+			    content: none;
+			}
+		}
+	}
+
+	.details {
+		padding-top: 85px; 
+		max-width: 375px;
+		margin: 0 auto;  
+		
+		@include breakpoint(min-width, $bp-medium) {
+		    padding-top: 35px; 
+    		max-width: 100%;
+    		overflow: hidden;
+		}
+
+		@include breakpoint(min-width, $bp-large) {
+		    padding: 0 0 0 42px; 
+    		max-width: 345px;
+    		margin: inherit;     
+		}
+
+		 li {
+			display: block;
+			text-align: left;
+			font-size: 30px;
+			color: #9d9c9c;
+			padding-bottom: 41px;
+			
+			@include breakpoint(min-width, $bp-medium) {
+			    width: 33.333333%;
+    			font-size: 18px;
+    			display: inline-block; 
+    			text-align: center; 
+    			padding-bottom: 34px; 
+			}
+
+			@include breakpoint(min-width, $bp-large) {
+			    width: 100%; 
+    			text-align: left; 
+    			padding: 6px 0 2px;
+    			line-height: 1.5; 
+			}
+			
+			&:last-child {
+				padding-bottom: 25px; 
+				
+				@include breakpoint(min-width, $bp-medium) {
+				    padding-bottom: 12px;
+				}
+			}   
+		}
+
+		.fa:before {
+			padding-right: 34px;
+			color:  $primary-color;
+			
+			@include breakpoint(min-width, $bp-large) {
+			    padding-right: 20px;
+			}
+		}
+	}
+	
+	form {
+		padding: 0 15px; 
+		
+		@include breakpoint(min-width, $bp-large) {
+			padding-left: 42px;
+		}
+	}
+	input, textarea {
+		width: 98%; 
+		max-width: 530px;
+		-webkit-border-radius: 3px; 
+		border-radius: 3px; 
+		border: 1px solid lightgrey;
+		background: #f0f0f0;
+		padding: 17px 16px;  
+		margin: 0 auto 6px; 
+		letter-spacing: 1px; 
+		font-size: 15px; 
+		
+		@include breakpoint(min-width, $bp-medium) {
+			margin-bottom: 7px;
+		}
+	}
+
+	textarea {
+		height: 170px; 
+	}
+
+	button[type="submit"] {
+		width: 70%; 
+		max-width: 400px; 
+		color: white;
+		background-color: $primary-color;  
+		font-size: 18px; 
+		padding: 11px 0;
+		margin: 15px auto; 
+		border: 1px solid transparent;
+		-webkit-border-radius: 2px; 
+		 border-radius: 2px;  
+		
+		@include breakpoint(min-width, $bp-medium) {
+			margin: 16px auto;
+		}
+
+		@include breakpoint(min-width, $bp-large) {
+			width: 125px;
+			padding: 9px 0;
+			margin: 0px auto;
+		}
+		
+		&:hover {
+			background-color: coral;
+		}
+	}
+}

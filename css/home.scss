@@ -1,152 +1,68 @@
-@media screen and (min-width: 992px) {
-	header {
-		padding: 17px;
-		
-		
-
-		nav {
-			margin-bottom: 7px;
-		}
-	}
-
-	#about {
-		.content {
-			h1 {
-				font-size: 25px;
-			    margin: 30px 0 33px;
-			    padding-bottom: 2px;
-			}
-
-			p {
-				max-width: 93%;
-			}
-		}
-	}
-
-
-	#services {
-		padding-top: 23px;
-		
-		.item-service {
-		    margin-bottom: 46px;
-		    width: 25%; 
-		    float: left;
-		} 
-	}
-
-	#portfolio {
-		h1 {
-		    font-size: 25px;
-		    margin: 3px 0 0;
-		    padding-bottom: 2px;
-		    
-		    &+p {
-				font-size: 16px; 
-				line-height: 1.6;
-				margin: 20px auto 28px;
-				max-width: 72%; 
-			}
-		}
-
-		.list-portfolio {
-			padding: 0;
-			text-align: right;
-			overflow: hidden;
-		}
-
-		.post-portfolio {
-			width: 25%;
-			float: left;
-			margin-bottom: 49px;  
-			a {
-			    margin: 8px 18px 0;
-			}
-
-			span {
-				padding: 11px 19px;
-    			display: block; 
-    		}
-		}	
-	}
-
-	.talk {
-	    margin-top: 57px;
-		padding-bottom: 108px;   	
-    	p {
-		   padding: 13px 0;
-		   max-width: 74%;
-		   margin: 0 auto; 
-		}
+#home {
+    position: relative;
+	padding: 145px 0 101px; 
+	color: white;
+	
+	@include breakpoint(min-width, $bp-medium) {
+        padding: 209px 0 146px; 
     }
-
-    .contact {
-    	padding: 85px 0 206px; 
-    	
-    	h1 {
-    		font-size: 25px;
-    		padding-bottom: 3px;
-    		margin: 27px 0 10px; 
-    		 
-    		&+p {
-    			font-size: 14px;
-			    line-height: 1.8;
-			    padding: 9px 30px 53px;
-    		}
-    	}
-
-    	h3 {
-    		margin-top: 0;
-    		font-size: 20px;
-    		
-    		&:after {
-    			content: none;
-    		} 
-    	}
-
-		.map, 
-		.contact-info {
-			text-align: left;
-			float: left;
-			width: 50%; 
+	
+	.slider {
+        .slider-item {
+			display: none;
+			transition: opacity 500ms linear;
+			
+			&:first-child {
+				display: block; 
+			}
 		}
 		
-    	.details {
-    		padding: 0 0 0 42px; 
-    		max-width: 345px;
-    		margin: inherit;     		
-    		li {
-    			width: 100%; 
-    			text-align: left; 
-    			padding: 6px 0 2px;
-    			line-height: 1.5; 
-    			
-    			&:last-child {
-				    padding-bottom: 12px;
-				} 
-    		}
+		img {
+			z-index: -2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;    
+		}
 
-    		.fa:before {
-				padding-right: 20px;
+		button {
+			position: absolute;
+			font-size: 88px;
+			border: none;
+			background: none; 
+			color: $primary-color;
+			top: 40%;
+			
+			&.prev {
+				left: 1.5%; 
 			}
-    	}
 
-    	form {
-    		padding-left: 42px;
-    		
-    		button[type="submit"] {
-			    width: 125px;
-			    padding: 9px 0;
-			    margin: 0px auto;
+			&.next {
+				right: 1.5%; 
 			}
-    	}
-    	input, textarea {
-    		margin-bottom: 7px;
-    	}
-    }
-
-    footer {
-	    word-spacing: 3px;
-	    padding: 18px 0;
-	    font-size: 14px;
+		}
+	}
+	
+	p {
+		font-weight: 500;
+		font-size: 18px;
+		background-color: rgba(0, 0, 0, 0.6);
+		display: table;
+	    margin: 0 auto 14px;
+	    padding: 6px 45px;
+	    
+	    @include breakpoint(min-width, $bp-medium) {
+	        font-size: 25px;
+    		padding: 12px 64px; 
+    		margin-bottom: 18px; 
+	    }
+		
+		&:last-child { 
+			padding: 6px 30px; 
+			
+			@include breakpoint(min-width, $bp-medium) {
+		        padding: 12px 52px;
+		    }
+		}
 	}
 }

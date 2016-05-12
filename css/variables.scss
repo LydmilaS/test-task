@@ -2,6 +2,8 @@ $primary-color: #f36b47;
 $text-color: #b1b0b0;
 $border: 8px solid $primary-color;
 $font-paragraph-medium: 15px;
+$bp-medium: 785px;
+$bp-large: 992px;
 
 %primary-h1 {
 	display: inline-block; 

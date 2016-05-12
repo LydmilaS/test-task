@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
 #about .content h1, #portfolio h1 {
   display: inline-block;
@@ -149,9 +148,11 @@ header .responsive {
   position: relative;
   padding: 145px 0 101px;
   color: white; }
+  @media only screen and (min-width: 785px) {
+    #home {
+      padding: 209px 0 146px; } }
   #home .slider .slider-item {
     display: none;
-    /* Все слайды скрыты */
     transition: opacity 500ms linear; }
     #home .slider .slider-item:first-child {
       display: block; }
@@ -179,8 +180,16 @@ header .responsive {
     display: table;
     margin: 0 auto 14px;
     padding: 6px 45px; }
+    @media only screen and (min-width: 785px) {
+      #home p {
+        font-size: 25px;
+        padding: 12px 64px;
+        margin-bottom: 18px; } }
     #home p:last-child {
       padding: 6px 30px; }
+      @media only screen and (min-width: 785px) {
+        #home p:last-child {
+          padding: 12px 52px; } }
 
 #about header {
   overflow: hidden;
@@ -188,31 +197,75 @@ header .responsive {
   color: white;
   background-color: #f36b47;
   font-size: 12px; }
+  @media only screen and (min-width: 785px) {
+    #about header {
+      font-size: 20px;
+      padding: 39px 0; } }
   #about header a {
     text-transform: uppercase;
     font-size: 18px;
     text-decoration: underline; }
+    @media only screen and (min-width: 785px) {
+      #about header a {
+        font-size: 22px; } }
 #about .content {
   border-bottom: 8px solid #f36b47;
   padding: 23px 0 31px; }
+  @media only screen and (min-width: 785px) {
+    #about .content {
+      border-bottom: none; } }
   #about .content h1 {
     border-bottom: 2px solid #f36b47;
     margin-bottom: 17px; }
+    @media only screen and (min-width: 785px) {
+      #about .content h1 {
+        font-size: 30px;
+        margin: 24px 0 34px; } }
+    @media only screen and (min-width: 992px) {
+      #about .content h1 {
+        font-size: 25px;
+        margin: 30px 0 33px;
+        padding-bottom: 2px; } }
   #about .content p {
     font-size: 17px;
     line-height: 1.5;
     color: #b1b0b0;
     padding: 0 27px; }
+    @media only screen and (min-width: 785px) {
+      #about .content p {
+        max-width: 600px;
+        word-spacing: 2px;
+        font-size: 16px;
+        margin: 0 auto;
+        line-height: 25px; } }
+    @media only screen and (min-width: 785px) {
+      #about .content p {
+        max-width: 93%; } }
 
 #services {
   border-bottom: 8px solid #f36b47;
   padding: 50px 25px 22px;
   overflow: hidden; }
+  @media only screen and (min-width: 785px) {
+    #services {
+      padding: 14px 15px 3px;
+      border-bottom: none; } }
+  @media only screen and (min-width: 992px) {
+    #services {
+      padding-top: 23px; } }
   #services .item-service {
     text-align: center;
     margin-bottom: 28px;
     float: left;
     padding: 0 15px; }
+    @media only screen and (min-width: 785px) {
+      #services .item-service {
+        margin-bottom: 60px;
+        width: 50%; } }
+    @media only screen and (min-width: 992px) {
+      #services .item-service {
+        margin-bottom: 46px;
+        width: 25%; } }
   #services .fa {
     color: #f36b47;
     font-size: 30px; }
@@ -220,6 +273,11 @@ header .responsive {
     margin: 11px 0 13px;
     font-weight: 400;
     font-size: 24px; }
+    @media only screen and (min-width: 785px) {
+      #services h2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 13px 0 17px; } }
     #services h2 a:hover {
       text-decoration: underline; }
   #services p {
@@ -227,26 +285,75 @@ header .responsive {
     line-height: 18px;
     color: #b1b0b0;
     padding: 0 37px; }
+    @media only screen and (min-width: 785px) {
+      #services p {
+        font-size: 11px;
+        line-height: 18px;
+        margin: 0 auto;
+        text-align: left;
+        max-width: 290px; } }
 
 #portfolio {
   padding: 58px 0;
   overflow: hidden; }
+  @media only screen and (min-width: 785px) {
+    #portfolio {
+      padding: 0; } }
   #portfolio h1 {
     padding-bottom: 2px;
     margin-bottom: 12px;
     border-bottom: 2px solid #f36b47; }
+    @media only screen and (min-width: 785px) {
+      #portfolio h1 {
+        font-size: 30px;
+        margin: 10px 0px 15px;
+        padding-bottom: 5px; } }
+    @media only screen and (min-width: 992px) {
+      #portfolio h1 {
+        font-size: 25px;
+        margin: 3px 0 0;
+        padding-bottom: 2px; } }
     #portfolio h1 + p {
       line-height: 24px;
       font-size: 16px;
       margin: 11px 0 58px;
       padding: 0 52px;
       color: #b1b0b0; }
+      @media only screen and (min-width: 785px) {
+        #portfolio h1 + p {
+          font-size: 16px;
+          line-height: 25px;
+          margin: 0 auto 40px;
+          word-spacing: 1px; } }
+      @media only screen and (min-width: 992px) {
+        #portfolio h1 + p {
+          font-size: 16px;
+          line-height: 1.6;
+          margin: 20px auto 28px;
+          max-width: 72%; } }
+  @media only screen and (min-width: 785px) {
+    #portfolio .list-portfolio {
+      padding: 0 35px; } }
+  @media only screen and (min-width: 992px) {
+    #portfolio .list-portfolio {
+      padding: 0;
+      text-align: right;
+      overflow: hidden; } }
   #portfolio .wrap {
     background-color: lightgrey;
     max-width: 250px;
     margin: 0 auto; }
   #portfolio .post-portfolio {
     margin-bottom: 60px; }
+    @media only screen and (min-width: 785px) {
+      #portfolio .post-portfolio {
+        margin-bottom: 53px;
+        float: left;
+        width: 50%; } }
+    @media only screen and (min-width: 992px) {
+      #portfolio .post-portfolio {
+        width: 25%;
+        margin-bottom: 49px; } }
     #portfolio .post-portfolio a {
       display: block;
       color: #fe5c32;
@@ -254,6 +361,14 @@ header .responsive {
       font-size: 22px;
       margin: 5px 8px 0;
       border-bottom: 1px solid grey; }
+      @media only screen and (min-width: 785px) {
+        #portfolio .post-portfolio a {
+          font-size: 14px;
+          margin-top: 8px;
+          padding-bottom: 4px; } }
+      @media only screen and (min-width: 992px) {
+        #portfolio .post-portfolio a {
+          margin: 8px 18px 0; } }
       #portfolio .post-portfolio a:hover {
         color: white; }
     #portfolio .post-portfolio span {
@@ -262,11 +377,27 @@ header .responsive {
       color: #737272;
       font-size: 16px;
       word-spacing: 2px; }
+      @media only screen and (min-width: 785px) {
+        #portfolio .post-portfolio span {
+          ont-size: 11px;
+          padding: 10px;
+          display: block; } }
+      @media only screen and (min-width: 992px) {
+        #portfolio .post-portfolio span {
+          padding: 11px 19px; } }
 
 .talk {
   padding: 60px 0;
   background-color: #7a7a7a;
   color: white; }
+  @media only screen and (min-width: 785px) {
+    .talk {
+      margin-top: 52px;
+      padding-bottom: 40px; } }
+  @media only screen and (min-width: 992px) {
+    .talk {
+      margin-top: 57px;
+      padding-bottom: 108px; } }
   .talk h2 {
     font-size: 58px;
     margin: 24px 0 12px; }
@@ -276,9 +407,24 @@ header .responsive {
     font-size: 22px;
     line-height: 25px;
     padding: 33px 22px 21px; }
+    @media only screen and (min-width: 785px) {
+      .talk p {
+        font-size: 15px;
+        padding: 24px 100px; } }
+    @media only screen and (min-width: 992px) {
+      .talk p {
+        padding: 13px 0;
+        max-width: 74%;
+        margin: 0 auto; } }
 
 .contact {
   padding: 38px 0 140px; }
+  @media only screen and (min-width: 785px) {
+    .contact {
+      padding: 57px 0 114px; } }
+  @media only screen and (min-width: 992px) {
+    .contact {
+      padding: 85px 0 206px; } }
   .contact h1 {
     position: relative;
     font-weight: 400;
@@ -286,6 +432,16 @@ header .responsive {
     display: inline-block;
     padding-bottom: 6px;
     margin: 24px 0 12px; }
+    @media only screen and (min-width: 785px) {
+      .contact h1 {
+        font-size: 30px;
+        margin: 20px 0 9px;
+        padding-bottom: 10px; } }
+    @media only screen and (min-width: 992px) {
+      .contact h1 {
+        font-size: 25px;
+        padding-bottom: 3px;
+        margin: 27px 0 10px; } }
     .contact h1:after {
       content: '';
       width: 100%;
@@ -300,11 +456,32 @@ header .responsive {
       word-spacing: 2px;
       line-height: 25px;
       padding: 46px 11px 114px; }
+      @media only screen and (min-width: 785px) {
+        .contact h1 + p {
+          font-size: 15px;
+          line-height: 1.7;
+          padding: 20px 60px 27px;
+          word-spacing: 3px; } }
+      @media only screen and (min-width: 992px) {
+        .contact h1 + p {
+          font-size: 14px;
+          line-height: 1.8;
+          padding: 9px 30px 53px; } }
   .contact .map {
     text-align: center;
     padding: 0; }
+    @media only screen and (min-width: 992px) {
+      .contact .map {
+        text-align: left;
+        float: left;
+        width: 50%; } }
     .contact .map img {
       height: 100%; }
+  @media only screen and (min-width: 992px) {
+    .contact .contanct-info {
+      text-align: left;
+      float: left;
+      width: 50%; } }
   .contact h3 {
     margin: 72px 0 0;
     position: relative;
@@ -312,6 +489,14 @@ header .responsive {
     font-size: 44px;
     display: inline-block;
     padding-bottom: 12px; }
+    @media only screen and (min-width: 785px) {
+      .contact h3 {
+        margin-top: 80px;
+        font-size: 30px; } }
+    @media only screen and (min-width: 992px) {
+      .contact h3 {
+        margin-top: 0;
+        font-size: 20px; } }
     .contact h3:after {
       content: '';
       width: 70%;
@@ -320,23 +505,58 @@ header .responsive {
       background-color: #f36b47;
       bottom: 0;
       left: 15%; }
+      @media only screen and (min-width: 992px) {
+        .contact h3:after {
+          content: none; } }
   .contact .details {
     padding-top: 85px;
     max-width: 375px;
     margin: 0 auto; }
+    @media only screen and (min-width: 785px) {
+      .contact .details {
+        padding-top: 35px;
+        max-width: 100%;
+        overflow: hidden; } }
+    @media only screen and (min-width: 992px) {
+      .contact .details {
+        padding: 0 0 0 42px;
+        max-width: 345px;
+        margin: inherit; } }
     .contact .details li {
       display: block;
       text-align: left;
       font-size: 30px;
       color: #9d9c9c;
       padding-bottom: 41px; }
+      @media only screen and (min-width: 785px) {
+        .contact .details li {
+          width: 33.333333%;
+          font-size: 18px;
+          display: inline-block;
+          text-align: center;
+          padding-bottom: 34px; } }
+      @media only screen and (min-width: 992px) {
+        .contact .details li {
+          width: 100%;
+          text-align: left;
+          padding: 6px 0 2px;
+          line-height: 1.5; } }
       .contact .details li:last-child {
         padding-bottom: 25px; }
+        @media only screen and (min-width: 785px) {
+          .contact .details li:last-child {
+            padding-bottom: 12px; } }
     .contact .details .fa:before {
       padding-right: 34px;
       color: #f36b47; }
+      @media only screen and (min-width: 992px) {
+        .contact .details .fa:before {
+          padding-right: 20px; } }
   .contact form {
     padding: 0 15px; }
+    @media only screen and (min-width: 992px) {
+      .contact form {
+        padding-left: 42px; } }
   .contact input, .contact textarea {
     width: 98%;
     max-width: 530px;
@@ -348,6 +568,9 @@ header .responsive {
     margin: 0 auto 6px;
     letter-spacing: 1px;
     font-size: 15px; }
+    @media only screen and (min-width: 785px) {
+      .contact input, .contact textarea {
+        margin-bottom: 7px; } }
   .contact textarea {
     height: 170px; }
   .contact button[type="submit"] {
@@ -361,6 +584,14 @@ header .responsive {
     border: 1px solid transparent;
     -webkit-border-radius: 2px;
     border-radius: 2px; }
+    @media only screen and (min-width: 785px) {
+      .contact button[type="submit"] {
+        margin: 16px auto; } }
+    @media only screen and (min-width: 992px) {
+      .contact button[type="submit"] {
+        width: 125px;
+        padding: 9px 0;
+        margin: 0px auto; } }
     .contact button[type="submit"]:hover {
       background-color: coral; }
 
@@ -371,216 +602,15 @@ footer {
   padding: 20px 0;
   font-size: 16px;
   word-spacing: 2px; }
+  @media only screen and (min-width: 785px) {
+    footer {
+      font-size: 15px; } }
+  @media only screen and (min-width: 992px) {
+    footer {
+      word-spacing: 3px;
+      padding: 18px 0;
+      font-size: 14px; } }
   footer a:hover {
     text-decoration: underline; }
-
-@media screen and (min-width: 785px) {
-  #home {
-    padding: 209px 0 146px; }
-    #home p {
-      font-size: 25px;
-      font-weight: 500;
-      padding: 12px 64px;
-      margin-bottom: 18px; }
-      #home p:last-child {
-        padding: 12px 52px; }
-
-  #about header {
-    font-size: 20px;
-    padding: 39px 0; }
-    #about header a {
-      font-size: 22px; }
-  #about .content {
-    border-bottom: none; }
-    #about .content h1 {
-      font-size: 30px;
-      margin: 24px 0 34px; }
-    #about .content p {
-      max-width: 600px;
-      word-spacing: 2px;
-      font-size: 16px;
-      margin: 0 auto;
-      line-height: 25px; }
-
-  #services {
-    padding: 14px 15px 3px;
-    border-bottom: none; }
-    #services .item-service {
-      margin-bottom: 60px;
-      width: 50%; }
-    #services h2 {
-      font-size: 18px;
-      font-weight: 400;
-      margin: 13px 0 17px; }
-    #services p {
-      font-size: 11px;
-      line-height: 18px;
-      margin: 0 auto;
-      text-align: left;
-      max-width: 290px; }
-
-  #portfolio {
-    padding: 0; }
-    #portfolio h1 {
-      font-size: 30px;
-      margin: 10px 0px 15px;
-      padding-bottom: 5px; }
-      #portfolio h1 + p {
-        font-size: 16px;
-        line-height: 25px;
-        margin: 0 auto 40px;
-        word-spacing: 1px; }
-    #portfolio .list-portfolio {
-      padding: 0 35px; }
-    #portfolio .post-portfolio {
-      margin-bottom: 53px;
-      float: left;
-      width: 50%; }
-      #portfolio .post-portfolio a {
-        font-size: 14px;
-        margin-top: 8px;
-        padding-bottom: 4px; }
-      #portfolio .post-portfolio span {
-        font-size: 11px;
-        padding: 10px;
-        display: block; }
-
-  .talk {
-    margin-top: 52px;
-    padding-bottom: 40px; }
-    .talk p {
-      font-size: 15px;
-      line-height: 25px;
-      padding: 24px 100px; }
-
-  .contact {
-    padding: 57px 0 114px; }
-    .contact h1 {
-      font-size: 30px;
-      margin: 20px 0 9px;
-      padding-bottom: 10px; }
-      .contact h1 + p {
-        font-size: 15px;
-        line-height: 1.7;
-        padding: 20px 60px 27px;
-        word-spacing: 3px; }
-    .contact h3 {
-      margin-top: 80px;
-      font-size: 30px; }
-    .contact .details {
-      padding-top: 35px;
-      max-width: 100%;
-      overflow: hidden; }
-      .contact .details li {
-        width: 33.333333%;
-        font-size: 18px;
-        display: inline-block;
-        text-align: center;
-        padding-bottom: 34px; }
-    .contact input, .contact textarea {
-      margin-bottom: 7px; }
-    .contact button[type="submit"] {
-      margin: 16px auto; }
-
-  footer {
-    padding: 20px 0;
-    font-size: 15px; } }
-@media screen and (min-width: 992px) {
-  header {
-    padding: 17px; }
-    header nav {
-      margin-bottom: 7px; }
-
-  #about .content h1 {
-    font-size: 25px;
-    margin: 30px 0 33px;
-    padding-bottom: 2px; }
-  #about .content p {
-    max-width: 93%; }
-
-  #services {
-    padding-top: 23px; }
-    #services .item-service {
-      margin-bottom: 46px;
-      width: 25%;
-      float: left; }
-
-  #portfolio h1 {
-    font-size: 25px;
-    margin: 3px 0 0;
-    padding-bottom: 2px; }
-    #portfolio h1 + p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 20px auto 28px;
-      max-width: 72%; }
-  #portfolio .list-portfolio {
-    padding: 0;
-    text-align: right;
-    overflow: hidden; }
-  #portfolio .post-portfolio {
-    width: 25%;
-    float: left;
-    margin-bottom: 49px; }
-    #portfolio .post-portfolio a {
-      margin: 8px 18px 0; }
-    #portfolio .post-portfolio span {
-      padding: 11px 19px;
-      display: block; }
-
-  .talk {
-    margin-top: 57px;
-    padding-bottom: 108px; }
-    .talk p {
-      padding: 13px 0;
-      max-width: 74%;
-      margin: 0 auto; }
-
-  .contact {
-    padding: 85px 0 206px; }
-    .contact h1 {
-      font-size: 25px;
-      padding-bottom: 3px;
-      margin: 27px 0 10px; }
-      .contact h1 + p {
-        font-size: 14px;
-        line-height: 1.8;
-        padding: 9px 30px 53px; }
-    .contact h3 {
-      margin-top: 0;
-      font-size: 20px; }
-      .contact h3:after {
-        content: none; }
-    .contact .map,
-    .contact .contact-info {
-      text-align: left;
-      float: left;
-      width: 50%; }
-    .contact .details {
-      padding: 0 0 0 42px;
-      max-width: 345px;
-      margin: inherit; }
-      .contact .details li {
-        width: 100%;
-        text-align: left;
-        padding: 6px 0 2px;
-        line-height: 1.5; }
-        .contact .details li:last-child {
-          padding-bottom: 12px; }
-      .contact .details .fa:before {
-        padding-right: 20px; }
-    .contact form {
-      padding-left: 42px; }
-      .contact form button[type="submit"] {
-        width: 125px;
-        padding: 9px 0;
-        margin: 0px auto; }
-    .contact input, .contact textarea {
-      margin-bottom: 7px; }
-
-  footer {
-    word-spacing: 3px;
-    padding: 18px 0;
-    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
