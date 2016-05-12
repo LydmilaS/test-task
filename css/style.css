@@ -46,38 +46,35 @@ a {
     padding: 16px; } }
 @media only screen and (min-width: 992px) {
   header {
-    padding: 17px; } }
+    padding: 28px 0 24px; } }
 header .logo {
   font-size: 66px;
   padding-bottom: 92px; }
   @media only screen and (min-width: 785px) {
     header .logo {
       font-size: 36px;
-      padding: 9px 0 9px 2px;
-      float: left; }
-      header .logo a {
-        padding-left: 12px; } }
+      padding: 9px 0 9px 14px;
+      float: left; } }
   @media only screen and (min-width: 992px) {
     header .logo {
       font-size: 22px;
       text-align: left;
-      padding: 11px 22px;
-      width: 25%;
-      padding-bottom: 0; } }
+      padding: 5px 0 0 18px;
+      width: 25%; } }
   header .logo span {
     color: #f36b47; }
 header nav {
   position: relative;
-  margin-bottom: 12px;
-  padding: 0; }
+  margin-bottom: 12px; }
   @media only screen and (min-width: 785px) {
     header nav {
       float: right;
+      font-size: 18px;
       overflow: hidden;
       margin: 0; } }
   @media only screen and (min-width: 992px) {
     header nav {
-      margin-bottom: 7px; } }
+      padding-right: 16px; } }
 header .topnav {
   margin: 12px -11px 0 0;
   overflow: hidden;
@@ -86,12 +83,11 @@ header .topnav {
   @media only screen and (min-width: 785px) {
     header .topnav {
       font-size: 15px;
-      padding-top: 11px;
       margin: 0; } }
   header .topnav li {
-    word-spacing: 4px;
+    word-spacing: 1px;
     float: left;
-    padding: 10px 15px; }
+    padding: 10px 18px; }
     @media only screen and (max-width: 784px) {
       header .topnav li {
         display: none; } }
@@ -165,14 +161,12 @@ header .responsive {
   #home .slider button {
     position: absolute;
     font-size: 88px;
-    border: none;
-    background: none;
     color: #f36b47;
     top: 40%; }
     #home .slider button.prev {
-      left: 1.5%; }
+      left: 3.5%; }
     #home .slider button.next {
-      right: 1.5%; }
+      right: 3.5%; }
   #home p {
     font-weight: 500;
     font-size: 18px;
@@ -338,7 +332,8 @@ header .responsive {
     #portfolio .list-portfolio {
       padding: 0;
       text-align: right;
-      overflow: hidden; } }
+      overflow: hidden;
+      margin: 0 -15px; } }
   #portfolio .wrap {
     background-color: lightgrey;
     max-width: 250px;
@@ -379,7 +374,7 @@ header .responsive {
       word-spacing: 2px; }
       @media only screen and (min-width: 785px) {
         #portfolio .post-portfolio span {
-          ont-size: 11px;
+          font-size: 11px;
           padding: 10px;
           display: block; } }
       @media only screen and (min-width: 992px) {
@@ -424,7 +419,7 @@ header .responsive {
       padding: 57px 0 114px; } }
   @media only screen and (min-width: 992px) {
     .contact {
-      padding: 85px 0 206px; } }
+      padding: 85px 0 215px; } }
   .contact h1 {
     position: relative;
     font-weight: 400;
@@ -478,7 +473,8 @@ header .responsive {
     .contact .map img {
       height: 100%; }
   @media only screen and (min-width: 992px) {
-    .contact .contanct-info {
+    .contact .contact-info {
+      padding-left: 17px;
       text-align: left;
       float: left;
       width: 50%; } }
@@ -488,7 +484,7 @@ header .responsive {
     font-weight: 400;
     font-size: 44px;
     display: inline-block;
-    padding-bottom: 12px; }
+    padding-bottom: 16px; }
     @media only screen and (min-width: 785px) {
       .contact h3 {
         margin-top: 80px;
@@ -539,7 +535,7 @@ header .responsive {
         .contact .details li {
           width: 100%;
           text-align: left;
-          padding: 6px 0 2px;
+          padding: 0px 0 13px;
           line-height: 1.5; } }
       .contact .details li:last-child {
         padding-bottom: 25px; }
@@ -589,9 +585,9 @@ header .responsive {
         margin: 16px auto; } }
     @media only screen and (min-width: 992px) {
       .contact button[type="submit"] {
-        width: 125px;
-        padding: 9px 0;
-        margin: 0px auto; } }
+        width: 130px;
+        padding: 10px 0;
+        margin: 3px auto; } }
     .contact button[type="submit"]:hover {
       background-color: coral; }
 
@@ -607,8 +603,6 @@ footer {
       font-size: 15px; } }
   @media only screen and (min-width: 992px) {
     footer {
-      word-spacing: 3px;
-      padding: 18px 0;
       font-size: 14px; } }
   footer a:hover {
     text-decoration: underline; }

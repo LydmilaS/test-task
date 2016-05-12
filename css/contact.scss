@@ -6,7 +6,7 @@
     }
 
     @include breakpoint(min-width, $bp-large) {
-        padding: 85px 0 206px; 
+        padding: 85px 0 215px; 
     }
 	
 	h1 {
@@ -76,8 +76,9 @@
 		}
 	}
 
-	.contanct-info {
+	.contact-info {
 		@include breakpoint(min-width, $bp-large) {
+			padding-left: 17px;
 		    text-align: left;
 			float: left;
 			width: 50%;  
@@ -90,7 +91,7 @@
 		font-weight: 400;
 		font-size: 44px; 
 		display: inline-block; 
-		padding-bottom: 12px;  
+		padding-bottom: 16px;  
 		
 		@include breakpoint(min-width, $bp-medium) {
 		    margin-top: 80px;
@@ -152,7 +153,7 @@
 			@include breakpoint(min-width, $bp-large) {
 			    width: 100%; 
     			text-align: left; 
-    			padding: 6px 0 2px;
+    		    padding: 0px 0 13px;
     			line-height: 1.5; 
 			}
 			
@@ -220,9 +221,9 @@
 		}
 
 		@include breakpoint(min-width, $bp-large) {
-			width: 125px;
-			padding: 9px 0;
-			margin: 0px auto;
+			width: 130px;
+		    padding: 10px 0;
+		    margin: 3px auto;
 		}
 		
 		&:hover {

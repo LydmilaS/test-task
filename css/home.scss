@@ -28,17 +28,15 @@
 		button {
 			position: absolute;
 			font-size: 88px;
-			border: none;
-			background: none; 
 			color: $primary-color;
 			top: 40%;
 			
 			&.prev {
-				left: 1.5%; 
+				left: 3.5%; 
 			}
 
 			&.next {
-				right: 1.5%; 
+				right: 3.5%; 
 			}
 		}
 	}

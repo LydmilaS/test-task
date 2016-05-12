@@ -4,7 +4,7 @@ header {
     }
 
     @include breakpoint(min-width, $bp-large) {
-        padding: 17px;
+        padding: 28px 0 24px;
     }
     
     .logo {
@@ -13,19 +13,15 @@ header {
 
         @include breakpoint(min-width, $bp-medium) {
             font-size: 36px;
-            padding: 9px 0 9px 2px;
+            padding: 9px 0 9px 14px;
             float: left;
-
-            a {
-               padding-left: 12px;
-            }
         }
+
         @include breakpoint(min-width, $bp-large) {
             font-size: 22px;
             text-align: left;
-            padding: 11px 22px;
+            padding: 5px 0 0 18px;
             width: 25%;
-            padding-bottom: 0;
         }
 
         span {
@@ -36,17 +32,17 @@ header {
     nav {
         position: relative;
         margin-bottom: 12px; 
-        padding: 0;
 
         @include breakpoint(min-width, $bp-medium) {
             float: right;
+            font-size: 18px; 
             overflow: hidden;
             margin: 0;
         }
 
         @include breakpoint(min-width, $bp-large) {
-            margin-bottom: 7px;
-        }
+           padding-right: 16px;
+        } 
 	}
     
     .topnav {
@@ -57,14 +53,13 @@ header {
 
         @include breakpoint(min-width, $bp-medium) {
             font-size: $font-paragraph-medium;
-            padding-top: 11px;
             margin: 0;
         }
 
         li {
-            word-spacing: 4px;
+            word-spacing: 1px;
             float: left;
-            padding: 10px 15px;
+            padding: 10px 18px;
 
             @include breakpoint(max-width, 784px) {
                 display: none;
