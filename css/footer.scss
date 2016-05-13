@@ -1,20 +1,20 @@
 footer {
-	background-color: $primary-color;
-	color: white;
-	margin-bottom: 95px; 
-	padding: 20px 0;
-	font-size: 16px; 
-	word-spacing: 2px;  
+    background-color: $primary-color;
+    color: white;
+    margin-bottom: 95px; 
+    padding: 20px 0;
+    font-size: 16px; 
+    word-spacing: 2px;  
 	
-	@include breakpoint(min-width, $bp-medium) {
-    	font-size: $font-paragraph-medium;
+    @include breakpoint(min-width, $bp-medium) {
+        font-size: $font-paragraph-medium;
     }
 
     @include breakpoint(min-width, $bp-large) {
-	    font-size: 14px;
+        font-size: 14px;
     }
 	
-	a:hover {
-		text-decoration: underline;
-	}
+    a:hover {
+        text-decoration: underline;
+    }
 }

@@ -1,74 +1,74 @@
 #home {
     position: relative;
-	padding: 145px 0 101px; 
-	color: white;
+    padding: 145px 0 101px; 
+    color: white;
 	
-	@include breakpoint(min-width, $bp-medium) {
+    @include breakpoint(min-width, $bp-medium) {
         padding: 209px 0 146px; 
     }
 	
-	.slider {
+    .slider {
         .slider-item {
-			display: none;
-			transition: opacity 500ms linear;
+            display: none;
+            transition: opacity 500ms linear;
 			
-			&:first-child {
-				display: block; 
-			}
-		}
+            &:first-child {
+                display: block; 
+            }
+        }
 		
-		img {
-			z-index: -2;
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 100%;    
-		}
+        img {
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;    
+        }
 
-		button {
-			position: absolute;
-			font-size: 88px;
-			color: $primary-color;
-			top: 40%;
+        button {
+            position: absolute;
+            font-size: 88px;
+            color: $primary-color;
+            top: 40%;
 			
-			&.prev {
-				left: 1.5%; 
+            &.prev {
+                left: 1.5%; 
 				
-				@include breakpoint(min-width, $bp-large) {
-			        left: 3.5%;
-			    }
-			}
+                @include breakpoint(min-width, $bp-large) {
+                    left: 3.5%;
+                }
+            }
 
-			&.next {
-				right: 1.5%; 
+            &.next {
+                right: 1.5%; 
 				
-				@include breakpoint(min-width, $bp-large) {
-			        right: 3.5%;
-			    }
-			}
-		}
-	}
+                @include breakpoint(min-width, $bp-large) {
+                    right: 3.5%;
+                }
+            }
+        }
+    }
 	
-	p {
-		font-weight: $font-weight-medium;
-		font-size: 18px;
-		background-color: rgba(0, 0, 0, 0.6);
-		display: table;
-	    margin: 0 auto 14px;
-	    padding: 6px 45px;
+    p {
+        font-weight: $font-weight-medium;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: table;
+        margin: 0 auto 14px;
+        padding: 6px 45px;
 	    
 	    @include breakpoint(min-width, $bp-medium) {
 	        font-size: 25px;
-    		padding: 12px 64px; 
-    		margin-bottom: 18px; 
-	    }
+            padding: 12px 64px; 
+            margin-bottom: 18px; 
+        }
 		
-		&:last-child { 
-			padding: 6px 30px; 
+        &:last-child { 
+            padding: 6px 30px; 
 			
-			@include breakpoint(min-width, $bp-medium) {
-		        padding: 12px 52px;
-		    }
-		}
-	}
+            @include breakpoint(min-width, $bp-medium) {
+                padding: 12px 52px;
+            }
+        }
+    }
 }

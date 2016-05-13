@@ -1,124 +1,122 @@
 #portfolio {
-	padding: 78px 0 58px; 
-	overflow: hidden;
+    padding: 78px 0 58px; 
+    overflow: hidden;
 	
-	@include breakpoint(min-width, $bp-medium) {
-	    padding: 10px 0 52px;
-	}
+    @include breakpoint(min-width, $bp-medium) {
+        padding: 10px 0 52px;
+    }
 
-	@include breakpoint(min-width, $bp-large) {
-	    padding: 3px 0 57px;
-	}
+    @include breakpoint(min-width, $bp-large) {
+        padding: 3px 0 57px;
+    }
 	
-	h1 {
-		@extend %primary-h1;
-		padding-bottom: 2px;
-		margin-bottom: 23px;  
-		border-bottom: 2px solid $primary-color;
+    h1 {
+        @extend %primary-h1;
+        padding-bottom: 2px;
+        margin-bottom: 23px;  
+        border-bottom: 2px solid $primary-color;
 		
-		@include breakpoint(min-width, $bp-medium) {
-		    font-size: 30px;
-		    margin-bottom: 15px;
-		    padding-bottom: 5px;
-		}
+        @include breakpoint(min-width, $bp-medium) {
+            font-size: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
 
-		@include breakpoint(min-width, $bp-large) {
-		    font-size: 25px;
-		    margin: 0 0 20px;
-		    padding-bottom: 2px;
-		}
+        @include breakpoint(min-width, $bp-large) {
+            font-size: 25px;
+            margin: 0 0 20px;
+            padding-bottom: 2px;
+        }
 		
-		&+p {
-			@extend %primary-p;
-			padding: 0 52px 58px;
+        &+p {
+            @extend %primary-p;
+            padding: 0 52px 58px;
 			
-			@include breakpoint(min-width, $bp-medium) {
-			    font-size: 16px;
-			    padding-bottom: 40px; 
-			    word-spacing: 1px;
-			}
+            @include breakpoint(min-width, $bp-medium) {
+                font-size: 16px;
+                padding-bottom: 40px; 
+                word-spacing: 1px;
+            }
 
-			@include breakpoint(min-width, $bp-large) {
-				padding-bottom: 28px;
-				margin: 0 auto;
-				max-width: 72%; 
-			}
-		}
-	}
+            @include breakpoint(min-width, $bp-large) {
+                padding-bottom: 28px;
+                margin: 0 auto;
+                max-width: 72%; 
+            }
+        }
+    }
 
-	.list-portfolio {
-		@include breakpoint(min-width, $bp-medium) {
-			padding: 0 35px;
-		}
+    .list-portfolio {
+        @include breakpoint(min-width, $bp-medium) {
+            padding: 0 35px;
+        }
 
-		@include breakpoint(min-width, $bp-large) {
-				padding: 0;
-				text-align: right;
-				overflow: hidden;
-				margin: 0 -15px;
-		}
-	}
+        @include breakpoint(min-width, $bp-large) {
+            padding: 0;
+            text-align: right;
+            overflow: hidden;
+            margin: 0 -15px;
+        }
+    }
 
-	.wrap {
-		background-color: lightgrey; 
-		max-width: 250px;
-		margin: 0 auto; 
-	}
+    .wrap {
+        background-color: lightgrey; 
+        max-width: 250px;
+        margin: 0 auto; 
+    }
 
-	.post-portfolio {
-		margin-bottom: 60px; 
+    .post-portfolio {
+        margin-bottom: 60px; 
 		
-		@include breakpoint(min-width, $bp-medium) {
-			margin-bottom: 53px;
-			float: left;
-			width: 50%; 
-		}
+        @include breakpoint(min-width, $bp-medium) {
+            margin-bottom: 53px;
+            float: left;
+            width: 50%; 
+        }
 
-		@include breakpoint(min-width, $bp-large) {
-			width: 25%;
-			margin-bottom: 49px;  
-		}
+        @include breakpoint(min-width, $bp-large) {
+            width: 25%;
+            margin-bottom: 49px;  
+        }
 
-		a {
-			display: block;
-			color: #fe5c32;
-			font-weight: 400;
-			font-size: 22px;
-		    margin: 5px 8px 0;
-			border-bottom: 1px solid grey; 
+        a {
+            display: block;
+            color: #fe5c32;
+            font-weight: 400;
+            font-size: 22px;
+            margin: 5px 8px 0;
+            border-bottom: 1px solid grey; 
 			
-			@include breakpoint(min-width, $bp-medium) {
-				font-size: 14px; 
-			    margin-top: 8px;
-    			padding-bottom: 4px;
-			}
+            @include breakpoint(min-width, $bp-medium) {
+                font-size: 14px; 
+                margin-top: 8px;
+                padding-bottom: 4px;
+            }
 
-			@include breakpoint(min-width, $bp-large) {
-				margin: 8px 18px 0;
-			}
+            @include breakpoint(min-width, $bp-large) {
+                margin: 8px 18px 0;
+            }
 			
-			
-			&:hover {
-				color: white;
-			}
-		}
+            &:hover {
+                color: white;
+            }
+        }
 
-		span {
-			padding: 6px 0 10px; 
-			display: block;
-			color: #737272;
-			font-size: 16px; 
-			word-spacing: 2px;
+        span {
+            padding: 6px 0 10px; 
+            display: block;
+            color: #737272;
+            font-size: 16px; 
+            word-spacing: 2px;
 			
-			@include breakpoint(min-width, $bp-medium) {
-				font-size: 11px;
-				padding: 10px;
-    			display: block; 
-			}
+            @include breakpoint(min-width, $bp-medium) {
+                font-size: 11px;
+                padding: 10px; 
+            }
 
-			@include breakpoint(min-width, $bp-large) {
-				padding: 11px 19px;
-			}
-		}
-	}
+            @include breakpoint(min-width, $bp-large) {
+                padding: 11px 19px;
+            }
+        }
+    }
 }

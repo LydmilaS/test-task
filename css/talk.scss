@@ -1,38 +1,38 @@
 .talk {
-	padding: 84px 0 105px; 
-	background-color: #7a7a7a;
-	color: white;
+    padding: 84px 0 105px; 
+    background-color: #7a7a7a;
+    color: white;
 	
-	@include breakpoint(min-width, $bp-medium) {
-    	padding-bottom: 63px; 
-	}
+    @include breakpoint(min-width, $bp-medium) {
+        padding-bottom: 63px; 
+    }
 
-	@include breakpoint(min-width, $bp-large) {
-		padding-bottom: 124px;   	
-	}
+    @include breakpoint(min-width, $bp-large) {
+        padding-bottom: 124px;   	
+    }
 	
-	h2 {
-		font-size: 58px;
-		span {
-			color: $primary-color;
-		} 
-	} 
+    h2 {
+        font-size: 58px;
+        
+        span {
+            color: $primary-color;
+        } 
+    } 
 
-	p {
-		font-size: 22px;
-		line-height: 25px;
-		padding-top: 45px;  
+    p {
+        font-size: 22px;
+        line-height: 25px;
+        padding-top: 45px;  
 		
-		@include breakpoint(min-width, $bp-medium) {
-			font-size: $font-paragraph-medium;
-		    padding-top: 36px;
-		    max-width: 74%;
-		    margin: 0 auto; 
-		} 
+        @include breakpoint(min-width, $bp-medium) {
+            font-size: $font-paragraph-medium;
+            padding-top: 36px;
+            max-width: 74%;
+            margin: 0 auto;
+        } 
 
-		@include breakpoint(min-width, $bp-large) {
-		    padding-top: 25px;
-		  
-		}
-	}
+        @include breakpoint(min-width, $bp-large) {
+            padding-top: 25px;
+        }
+    }
 }

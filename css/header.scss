@@ -41,9 +41,9 @@ header {
         }
 
         @include breakpoint(min-width, $bp-large) {
-           padding-right: 16px;
+            padding-right: 16px;
         } 
-	}
+    }
     
     .topnav {
         margin: 12px -11px 0 0;
@@ -118,13 +118,13 @@ header {
                
             li {
                 float: none;
-               	display: block;
+                display: block;
 
-               	a {
-               	    float: left;
-               	    clear: both;
-               	    margin-bottom: 10px;
-               	}
+                a {
+                    float: left;
+                    clear: both;
+                    margin-bottom: 10px;
+                }
             }
 
             .icon {
