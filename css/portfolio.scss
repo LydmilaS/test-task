@@ -1,47 +1,46 @@
 #portfolio {
-	padding: 58px 0; 
+	padding: 78px 0 58px; 
 	overflow: hidden;
 	
 	@include breakpoint(min-width, $bp-medium) {
-	    padding: 0;
+	    padding: 10px 0 52px;
+	}
+
+	@include breakpoint(min-width, $bp-large) {
+	    padding: 3px 0 57px;
 	}
 	
 	h1 {
 		@extend %primary-h1;
 		padding-bottom: 2px;
-		margin-bottom: 12px;  
+		margin-bottom: 23px;  
 		border-bottom: 2px solid $primary-color;
 		
 		@include breakpoint(min-width, $bp-medium) {
 		    font-size: 30px;
-		    margin: 10px 0px 15px;
+		    margin-bottom: 15px;
 		    padding-bottom: 5px;
 		}
 
 		@include breakpoint(min-width, $bp-large) {
 		    font-size: 25px;
-		    margin: 3px 0 0;
+		    margin: 0 0 20px;
 		    padding-bottom: 2px;
 		}
 		
 		&+p {
-			line-height: 24px;
-			font-size: 16px;
-			margin: 11px 0 58px;
-			padding: 0 52px;
-			color: $text-color;
+			@extend %primary-p;
+			padding: 0 52px 58px;
 			
 			@include breakpoint(min-width, $bp-medium) {
 			    font-size: 16px;
-			    line-height: 25px;
-			    margin: 0 auto 40px;
+			    padding-bottom: 40px; 
 			    word-spacing: 1px;
 			}
 
 			@include breakpoint(min-width, $bp-large) {
-			    font-size: 16px; 
-				line-height: 1.6;
-				margin: 20px auto 28px;
+				padding-bottom: 28px;
+				margin: 0 auto;
 				max-width: 72%; 
 			}
 		}
@@ -65,6 +64,7 @@
 		max-width: 250px;
 		margin: 0 auto; 
 	}
+
 	.post-portfolio {
 		margin-bottom: 60px; 
 		

@@ -24,10 +24,15 @@
 
     .content {
         border-bottom: $border;
-        padding: 23px 0 31px; 
+        padding: 43px 0 31px; 
 
         @include breakpoint(min-width, $bp-medium) {
             border-bottom: none;
+            padding-top: 47px; 
+        }
+        
+        @include breakpoint(min-width, $bp-large) {
+            padding-top: 53px; 
         }
 
         h1 {
@@ -37,31 +42,28 @@
 
             @include breakpoint(min-width, $bp-medium) {
                 font-size: 30px;
-                margin: 24px 0 34px;
+                margin-bottom: 32px;
             }
 
             @include breakpoint(min-width, $bp-large) {
                 font-size: 25px;
-                margin: 30px 0 33px;
+                margin-bottom: 33px;
                 padding-bottom: 2px;
             }
         }
 
         p {
-            font-size: 17px;
-            line-height: 1.5;
-            color: $text-color;
+            @extend %primary-p;
             padding: 0 27px;
 
             @include breakpoint(min-width, $bp-medium) {
                 max-width: 600px;
                 word-spacing: 2px; 
-                font-size: 16px;
+                font-size: 15px;
                 margin: 0 auto;
-                line-height: 25px;
             }
 
-            @include breakpoint(min-width, $bp-medium) {
+            @include breakpoint(min-width, $bp-large) {
                 max-width: 93%;
             }
         }

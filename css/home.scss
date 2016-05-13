@@ -32,17 +32,25 @@
 			top: 40%;
 			
 			&.prev {
-				left: 3.5%; 
+				left: 1.5%; 
+				
+				@include breakpoint(min-width, $bp-large) {
+			        left: 3.5%;
+			    }
 			}
 
 			&.next {
-				right: 3.5%; 
+				right: 1.5%; 
+				
+				@include breakpoint(min-width, $bp-large) {
+			        right: 3.5%;
+			    }
 			}
 		}
 	}
 	
 	p {
-		font-weight: 500;
+		font-weight: $font-weight-medium;
 		font-size: 18px;
 		background-color: rgba(0, 0, 0, 0.6);
 		display: table;

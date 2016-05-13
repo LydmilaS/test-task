@@ -3,8 +3,12 @@
   display: inline-block;
   font-weight: 500;
   font-size: 26px;
-  margin-top: 20px;
   padding-bottom: 3px; }
+
+#about .content p, #portfolio h1 + p {
+  font-size: 17px;
+  line-height: 25px;
+  color: #b1b0b0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -43,7 +47,7 @@ a {
 
 @media only screen and (min-width: 785px) {
   header {
-    padding: 16px; } }
+    padding: 26px 0 24px; } }
 @media only screen and (min-width: 992px) {
   header {
     padding: 28px 0 24px; } }
@@ -53,7 +57,7 @@ header .logo {
   @media only screen and (min-width: 785px) {
     header .logo {
       font-size: 36px;
-      padding: 9px 0 9px 14px;
+      padding: 0 0 0 30px;
       float: left; } }
   @media only screen and (min-width: 992px) {
     header .logo {
@@ -65,12 +69,12 @@ header .logo {
     color: #f36b47; }
 header nav {
   position: relative;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  overflow: hidden; }
   @media only screen and (min-width: 785px) {
     header nav {
       float: right;
       font-size: 18px;
-      overflow: hidden;
       margin: 0; } }
   @media only screen and (min-width: 992px) {
     header nav {
@@ -111,8 +115,7 @@ header .topnav {
     padding-bottom: 2px; }
     header .topnav a.active, header .topnav a:hover {
       -webkit-box-shadow: inset 0 -2px 0 0 #f36b47;
-      box-shadow: inset 0 -2px 0 0 #f36b47;
-      background: none; }
+      box-shadow: inset 0 -2px 0 0 #f36b47; }
       header .topnav a.active:after, header .topnav a:hover:after {
         content: "";
         position: absolute;
@@ -164,9 +167,15 @@ header .responsive {
     color: #f36b47;
     top: 40%; }
     #home .slider button.prev {
-      left: 3.5%; }
+      left: 1.5%; }
+      @media only screen and (min-width: 992px) {
+        #home .slider button.prev {
+          left: 3.5%; } }
     #home .slider button.next {
-      right: 3.5%; }
+      right: 1.5%; }
+      @media only screen and (min-width: 992px) {
+        #home .slider button.next {
+          right: 3.5%; } }
   #home p {
     font-weight: 500;
     font-size: 18px;
@@ -204,35 +213,35 @@ header .responsive {
         font-size: 22px; } }
 #about .content {
   border-bottom: 8px solid #f36b47;
-  padding: 23px 0 31px; }
+  padding: 43px 0 31px; }
   @media only screen and (min-width: 785px) {
     #about .content {
-      border-bottom: none; } }
+      border-bottom: none;
+      padding-top: 47px; } }
+  @media only screen and (min-width: 992px) {
+    #about .content {
+      padding-top: 53px; } }
   #about .content h1 {
     border-bottom: 2px solid #f36b47;
     margin-bottom: 17px; }
     @media only screen and (min-width: 785px) {
       #about .content h1 {
         font-size: 30px;
-        margin: 24px 0 34px; } }
+        margin-bottom: 32px; } }
     @media only screen and (min-width: 992px) {
       #about .content h1 {
         font-size: 25px;
-        margin: 30px 0 33px;
+        margin-bottom: 33px;
         padding-bottom: 2px; } }
   #about .content p {
-    font-size: 17px;
-    line-height: 1.5;
-    color: #b1b0b0;
     padding: 0 27px; }
     @media only screen and (min-width: 785px) {
       #about .content p {
         max-width: 600px;
         word-spacing: 2px;
-        font-size: 16px;
-        margin: 0 auto;
-        line-height: 25px; } }
-    @media only screen and (min-width: 785px) {
+        font-size: 15px;
+        margin: 0 auto; } }
+    @media only screen and (min-width: 992px) {
       #about .content p {
         max-width: 93%; } }
 
@@ -282,48 +291,44 @@ header .responsive {
     @media only screen and (min-width: 785px) {
       #services p {
         font-size: 11px;
-        line-height: 18px;
         margin: 0 auto;
         text-align: left;
         max-width: 290px; } }
 
 #portfolio {
-  padding: 58px 0;
+  padding: 78px 0 58px;
   overflow: hidden; }
   @media only screen and (min-width: 785px) {
     #portfolio {
-      padding: 0; } }
+      padding: 10px 0 52px; } }
+  @media only screen and (min-width: 992px) {
+    #portfolio {
+      padding: 3px 0 57px; } }
   #portfolio h1 {
     padding-bottom: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 23px;
     border-bottom: 2px solid #f36b47; }
     @media only screen and (min-width: 785px) {
       #portfolio h1 {
         font-size: 30px;
-        margin: 10px 0px 15px;
+        margin-bottom: 15px;
         padding-bottom: 5px; } }
     @media only screen and (min-width: 992px) {
       #portfolio h1 {
         font-size: 25px;
-        margin: 3px 0 0;
+        margin: 0 0 20px;
         padding-bottom: 2px; } }
     #portfolio h1 + p {
-      line-height: 24px;
-      font-size: 16px;
-      margin: 11px 0 58px;
-      padding: 0 52px;
-      color: #b1b0b0; }
+      padding: 0 52px 58px; }
       @media only screen and (min-width: 785px) {
         #portfolio h1 + p {
           font-size: 16px;
-          line-height: 25px;
-          margin: 0 auto 40px;
+          padding-bottom: 40px;
           word-spacing: 1px; } }
       @media only screen and (min-width: 992px) {
         #portfolio h1 + p {
-          font-size: 16px;
-          line-height: 1.6;
-          margin: 20px auto 28px;
+          padding-bottom: 28px;
+          margin: 0 auto;
           max-width: 72%; } }
   @media only screen and (min-width: 785px) {
     #portfolio .list-portfolio {
@@ -382,35 +387,32 @@ header .responsive {
           padding: 11px 19px; } }
 
 .talk {
-  padding: 60px 0;
+  padding: 84px 0 105px;
   background-color: #7a7a7a;
   color: white; }
   @media only screen and (min-width: 785px) {
     .talk {
-      margin-top: 52px;
-      padding-bottom: 40px; } }
+      padding-bottom: 63px; } }
   @media only screen and (min-width: 992px) {
     .talk {
-      margin-top: 57px;
-      padding-bottom: 108px; } }
+      padding-bottom: 124px; } }
   .talk h2 {
-    font-size: 58px;
-    margin: 24px 0 12px; }
+    font-size: 58px; }
     .talk h2 span {
       color: #f36b47; }
   .talk p {
     font-size: 22px;
     line-height: 25px;
-    padding: 33px 22px 21px; }
+    padding-top: 45px; }
     @media only screen and (min-width: 785px) {
       .talk p {
         font-size: 15px;
-        padding: 24px 100px; } }
-    @media only screen and (min-width: 992px) {
-      .talk p {
-        padding: 13px 0;
+        padding-top: 36px;
         max-width: 74%;
         margin: 0 auto; } }
+    @media only screen and (min-width: 992px) {
+      .talk p {
+        padding-top: 25px; } }
 
 .contact {
   padding: 38px 0 140px; }
@@ -419,7 +421,7 @@ header .responsive {
       padding: 57px 0 114px; } }
   @media only screen and (min-width: 992px) {
     .contact {
-      padding: 85px 0 215px; } }
+      padding: 82px 0 215px; } }
   .contact h1 {
     position: relative;
     font-weight: 400;
@@ -505,12 +507,13 @@ header .responsive {
         .contact h3:after {
           content: none; } }
   .contact .details {
+    position: relative;
     padding-top: 85px;
     max-width: 375px;
     margin: 0 auto; }
     @media only screen and (min-width: 785px) {
       .contact .details {
-        padding-top: 35px;
+        padding-top: 96px;
         max-width: 100%;
         overflow: hidden; } }
     @media only screen and (min-width: 992px) {
@@ -530,18 +533,33 @@ header .responsive {
           font-size: 18px;
           display: inline-block;
           text-align: center;
-          padding-bottom: 34px; } }
+          padding-bottom: 23px;
+          line-height: 25px; } }
       @media only screen and (min-width: 992px) {
         .contact .details li {
           width: 100%;
           text-align: left;
-          padding: 0px 0 13px;
-          line-height: 1.5; } }
+          padding: 0px 0 13px; } }
       .contact .details li:last-child {
         padding-bottom: 25px; }
         @media only screen and (min-width: 785px) {
           .contact .details li:last-child {
+            position: absolute;
+            left: 30%;
+            top: 30px; } }
+        @media only screen and (min-width: 992px) {
+          .contact .details li:last-child {
+            position: static;
             padding-bottom: 12px; } }
+      @media only screen and (min-width: 785px) {
+        .contact .details li:first-child {
+          text-align: left; } }
+      @media only screen and (min-width: 785px) {
+        .contact .details li:nth-child(2) {
+          text-align: right; } }
+      @media only screen and (min-width: 785px) {
+        .contact .details li:nth-child(2) {
+          text-align: left; } }
     .contact .details .fa:before {
       padding-right: 34px;
       color: #f36b47; }
@@ -567,6 +585,10 @@ header .responsive {
     @media only screen and (min-width: 785px) {
       .contact input, .contact textarea {
         margin-bottom: 7px; } }
+  @media only screen and (min-width: 992px) {
+    .contact input[type="text"],
+    .contact input[type="email"] {
+      width: 65%; } }
   .contact textarea {
     height: 170px; }
   .contact button[type="submit"] {

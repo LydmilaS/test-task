@@ -6,7 +6,7 @@
     }
 
     @include breakpoint(min-width, $bp-large) {
-        padding: 85px 0 215px; 
+        padding: 82px 0 215px; 
     }
 	
 	h1 {
@@ -119,12 +119,13 @@
 	}
 
 	.details {
+		position: relative;
 		padding-top: 85px; 
 		max-width: 375px;
 		margin: 0 auto;  
 		
 		@include breakpoint(min-width, $bp-medium) {
-		    padding-top: 35px; 
+		    padding-top: 96px; 
     		max-width: 100%;
     		overflow: hidden;
 		}
@@ -147,23 +148,47 @@
     			font-size: 18px;
     			display: inline-block; 
     			text-align: center; 
-    			padding-bottom: 34px; 
+    			padding-bottom: 23px; 
+    			line-height: 25px; 
 			}
 
 			@include breakpoint(min-width, $bp-large) {
 			    width: 100%; 
     			text-align: left; 
-    		    padding: 0px 0 13px;
-    			line-height: 1.5; 
+    		    padding: 0px 0 13px; 
 			}
 			
 			&:last-child {
 				padding-bottom: 25px; 
 				
 				@include breakpoint(min-width, $bp-medium) {
-				    padding-bottom: 12px;
+				    position: absolute;
+				    left: 30%;
+				    top: 30px;
+				}
+
+				@include breakpoint(min-width, $bp-large) {
+				    position: static;
+				    padding-bottom: 12px; 
 				}
 			}   
+			
+
+			&:first-child {
+				@include breakpoint(min-width, $bp-medium) {
+				    text-align: left;
+				}
+			}
+
+			&:nth-child(2) {
+				@include breakpoint(min-width, $bp-medium) {
+				    text-align: right;
+				}
+
+				@include breakpoint(min-width, $bp-medium) {
+				    text-align: left;
+				}
+			}
 		}
 
 		.fa:before {
@@ -197,6 +222,13 @@
 		
 		@include breakpoint(min-width, $bp-medium) {
 			margin-bottom: 7px;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		@include breakpoint(min-width, $bp-large) {
+			width: 65%;
 		}
 	}
 
