@@ -1,4 +1,6 @@
 #home {
+    background: url(../images/slide1.jpg) no-repeat;
+    background-size: cover;
     position: relative;
     padding: 145px 0 101px; 
     color: white;
@@ -8,6 +10,7 @@
     }
 	
     .slider {
+        position: relative;
         .slider-item {
             display: none;
             transition: opacity 500ms linear;

@@ -144,38 +144,42 @@ header .responsive {
         top: 0; } }
 
 #home {
+  background: url(../images/slide1.jpg) no-repeat;
+  background-size: cover;
   position: relative;
   padding: 145px 0 101px;
   color: white; }
   @media only screen and (min-width: 785px) {
     #home {
       padding: 209px 0 146px; } }
-  #home .slider .slider-item {
-    display: none;
-    transition: opacity 500ms linear; }
-    #home .slider .slider-item:first-child {
-      display: block; }
-  #home .slider img {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%; }
-  #home .slider button {
-    position: absolute;
-    font-size: 88px;
-    color: #f36b47;
-    top: 40%; }
-    #home .slider button.prev {
-      left: 1.5%; }
-      @media only screen and (min-width: 992px) {
-        #home .slider button.prev {
-          left: 3.5%; } }
-    #home .slider button.next {
-      right: 1.5%; }
-      @media only screen and (min-width: 992px) {
-        #home .slider button.next {
-          right: 3.5%; } }
+  #home .slider {
+    position: relative; }
+    #home .slider .slider-item {
+      display: none;
+      transition: opacity 500ms linear; }
+      #home .slider .slider-item:first-child {
+        display: block; }
+    #home .slider img {
+      z-index: -2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%; }
+    #home .slider button {
+      position: absolute;
+      font-size: 88px;
+      color: #f36b47;
+      top: 40%; }
+      #home .slider button.prev {
+        left: 1.5%; }
+        @media only screen and (min-width: 992px) {
+          #home .slider button.prev {
+            left: 3.5%; } }
+      #home .slider button.next {
+        right: 1.5%; }
+        @media only screen and (min-width: 992px) {
+          #home .slider button.next {
+            right: 3.5%; } }
   #home p {
     font-weight: 500;
     font-size: 18px;
@@ -518,7 +522,8 @@ header .responsive {
     @media only screen and (min-width: 992px) {
       .contact .details {
         padding: 0 0 0 42px;
-        max-width: 345px; } }
+        max-width: 345px;
+        margin: 0; } }
     .contact .details li {
       display: block;
       text-align: left;

@@ -122,7 +122,7 @@
         position: relative;
         padding-top: 85px; 
         max-width: 375px;
-        margin: 0 auto;  
+        margin: 0 auto;
 		
         @include breakpoint(min-width, $bp-medium) {
             padding-top: 96px; 
@@ -132,7 +132,8 @@
 
         @include breakpoint(min-width, $bp-large) {
             padding: 0 0 0 42px; 
-            max-width: 345px;   
+            max-width: 345px;  
+            margin: 0; 
         }
 
         li {
