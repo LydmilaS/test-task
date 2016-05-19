@@ -7,7 +7,7 @@
     <title>UIBrash</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="js/topmenu.js"></script>
     <script src="js/slider.js"></script>
     <link href="css/style.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 <section id="home">
         <div class="slider">
             <ul>
-                <li class="slider-item">
+                <li class="slider-item active">
                     <img src="images/slide1.jpg" alt="slide1" />
                     <div class="slider-info">
                         <p>Welcome To UIBrash</p>
@@ -73,6 +73,13 @@
                 <button class="next fa fa-angle-right" aria-hidden="true"></button>
             </div>
         </div>
+        <script>
+            $(document).ready(function() {
+                $('.slider').slider({
+                    duration: 500,
+                });
+            });
+        </script>
 </section>
 <section id="about">
     <header>

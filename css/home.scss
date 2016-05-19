@@ -3,18 +3,17 @@
     color: white;
 	
     .slider {
+        overflow: hidden;
         .slider-item {
-            display: none;
+            position: relative;
             transition: opacity 500ms linear;
-			
-            &:first-child {
-                display: block; 
-            }
+
         }
 		
         img {
             z-index: -2;
             height: 100%;
+            max-height: 490px; 
             width: 100%;  
             margin: -2px 0;   
         }

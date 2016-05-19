@@ -146,31 +146,32 @@ header .responsive {
 #home {
   position: relative;
   color: white; }
-  #home .slider .slider-item {
-    display: none;
-    transition: opacity 500ms linear; }
-    #home .slider .slider-item:first-child {
-      display: block; }
-  #home .slider img {
-    z-index: -2;
-    height: 100%;
-    width: 100%;
-    margin: -2px 0; }
-  #home .slider button {
-    position: absolute;
-    font-size: 88px;
-    color: #f36b47;
-    top: 40%; }
-    #home .slider button.prev {
-      left: 1.5%; }
-      @media only screen and (min-width: 992px) {
-        #home .slider button.prev {
-          left: 3.5%; } }
-    #home .slider button.next {
-      right: 1.5%; }
-      @media only screen and (min-width: 992px) {
-        #home .slider button.next {
-          right: 3.5%; } }
+  #home .slider {
+    overflow: hidden; }
+    #home .slider .slider-item {
+      position: relative;
+      transition: opacity 500ms linear; }
+    #home .slider img {
+      z-index: -2;
+      height: 100%;
+      max-height: 490px;
+      width: 100%;
+      margin: -2px 0; }
+    #home .slider button {
+      position: absolute;
+      font-size: 88px;
+      color: #f36b47;
+      top: 40%; }
+      #home .slider button.prev {
+        left: 1.5%; }
+        @media only screen and (min-width: 992px) {
+          #home .slider button.prev {
+            left: 3.5%; } }
+      #home .slider button.next {
+        right: 1.5%; }
+        @media only screen and (min-width: 992px) {
+          #home .slider button.next {
+            right: 3.5%; } }
   #home .slider-info {
     position: absolute;
     width: 100%;
