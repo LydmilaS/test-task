@@ -149,8 +149,10 @@ header .responsive {
   #home .slider {
     overflow: hidden; }
     #home .slider .slider-item {
-      position: relative;
-      transition: opacity 500ms linear; }
+      display: none;
+      position: relative; }
+      #home .slider .slider-item.active {
+        display: block; }
     #home .slider img {
       z-index: -2;
       height: 100%;

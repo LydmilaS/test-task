@@ -5,8 +5,12 @@
     .slider {
         overflow: hidden;
         .slider-item {
+            display: none;
             position: relative;
-            transition: opacity 500ms linear;
+                      
+            &.active {
+                display: block; 
+            }
 
         }
 		
