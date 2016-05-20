@@ -2,7 +2,7 @@
     
   $.fn.slider = function( options ) {  
     
-    var Slider = function(options, wrapper) {
+    var Slider = function(options) {
       $.extend(this.options, options);
       this.leftClickAction();
       this.rightClickAction();
